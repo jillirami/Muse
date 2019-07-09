@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Lato&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: bold;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.link {
+  text-decoration: none;
+}

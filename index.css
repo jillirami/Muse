@@ -4,7 +4,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Belleza&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Lato&display=swap');
 
 
 * {
@@ -13,13 +12,10 @@
   /* font-family: 'Poiret One', cursive; */
   /* font-family: 'El Messiri', sans-serif; */
   /* font-family: 'Belleza', sans-serif; */
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif;
   font-family: 'Bungee Hairline', cursive;
-  font-weight: bold;
+  font-weight: bold; */
   text-align: center;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
   animation-name: fadeIn;
   animation-duration: 3s;
 }
@@ -36,10 +32,6 @@ header {
 
 nav {
   font-size: 3em;
-}
-
-.link {
-  text-decoration: none;
 }
 
 footer {

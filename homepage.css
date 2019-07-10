@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template: auto auto / auto;
+  grid-template: auto auto / 1fr;
   border: 5px solid red;
 }
 
@@ -30,6 +30,8 @@ section {
   grid-row: 2;
   display: flex;
   border: 5px solid green;
+  width: 90%;
+  margin: auto;
 }
 
 div {

@@ -28,3 +28,7 @@ div {
   text-align: center;
   border: 5px solid black;
 }
+
+.subdiv {
+  border: 5px solid orange;
+}

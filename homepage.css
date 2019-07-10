@@ -13,9 +13,17 @@ header {
 
 #settings-link {
   border: 5px solid purple;
-  text-align: right;
   display: flex;
   align-items: center;
+
+}
+
+#settings-border {
+  border: 2px double gray;
+  border-radius: 10px;
+  padding: 3px;
+  width: auto;
+  margin-left: auto;
 }
 
 section {

@@ -1,18 +1,30 @@
 body {
   display: grid;
   grid-template: auto auto / auto;
+  border: 5px solid red;
 }
 
 header {
-  font-size: 2em;
   grid-row: 1;
+  display: flex;
+  font-size: 2em;
+  border: 5px solid yellow;
+}
+
+#settings-link {
+  border: 5px solid purple;
+  text-align: right;
+  display: flex;
+  align-items: center;
 }
 
 section {
   grid-row: 2;
   display: flex;
+  border: 5px solid green;
 }
 
 div {
   text-align: center;
+  border: 5px solid black;
 }

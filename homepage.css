@@ -1,9 +1,18 @@
 body {
-  position: relative;
+  display: grid;
+  grid-template: auto auto / auto;
 }
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  font-size: 2em;
+  grid-row: 1;
+}
+
+section {
+  grid-row: 2;
+  display: flex;
+}
+
+div {
+  text-align: center;
 }

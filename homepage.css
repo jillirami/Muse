@@ -1,36 +1,36 @@
 body {
+  border: 5px solid red;
   display: grid;
   grid-template: auto auto auto/ 1fr;
-  border: 5px solid red;
 }
 
 header {
+  border: 5px solid yellow;
   grid-row: 1;
   display: flex;
+  justify-content: space-between;
   font-size: 2em;
-  border: 5px solid yellow;
+}
+
+header > * {
+  width: auto;
+  display: flex;
+  align-items: center;
 }
 
 #greeting {
   border: 5px solid grey;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
 
 #settings-link {
   border: 5px solid purple;
-  display: flex;
-  align-items: center;
+  margin-right: 10px;
 }
 
 #settings-border {
   border: 1px double gray;
   border-radius: 10px;
   padding: 3px;
-  width: auto;
-  margin-left: auto;
-  margin-right: 10px;
 }
 
 #quote {
@@ -42,16 +42,20 @@ header {
 }
 
 section {
+  border: 5px solid green;
   grid-row: 3;
   display: flex;
-  border: 5px solid green;
+  flex-wrap: wrap;
   width: 90%;
   margin: auto;
+  justify-content: center;
 }
 
 div {
-  text-align: center;
   border: 5px solid black;
+  text-align: center;
+  display: inline;
+  max-width: 60vh;
 }
 
 .subdiv {

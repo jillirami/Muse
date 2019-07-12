@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Homepage";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/homepage.css" type="text/css"/>
+}
+
+<header>
+    <a class="link" asp-area="" asp-controller="Home" asp-action="Index">
+        <h1>MUSE</h1>
+    </a>
+
+    <p id="greeting">Good Day Human!</p>
+    <a id="settings-link" class="link" href="Settings.cshtml">
+        <h6 id="settings-border">SETTINGS</h6>
+    </a>
+</header>
+<h1 id="quote">QUOTE OF THE DAY</h1>
+<section>
+    <div>
+        <a class="link" href="Timeline.cshtml">
+            <h2>Timeline</h2>
+            <div class="subdiv">
+                Words words words
+            </div>
+            <h5>"what has been"</h5>
+        </a>
+    </div>
+    <div>
+        <a class="link" href="Journal.cshtml">
+            <h2>Journal</h2>
+            <div class="subdiv">
+                Phrases phrases phrases
+            </div>
+            <h5>"what is"</h5>
+        </a>
+    </div>
+    <div>
+        <a class="link" href="Aspirations.cshtml">
+            <h2>Aspirations</h2>
+            <div class="subdiv">
+                Terms terms terms
+            </div>
+            <h5>"what will be"</h5>
+        </a>
+    </div>
+</section>

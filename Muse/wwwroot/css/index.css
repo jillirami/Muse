@@ -1,0 +1,39 @@
+﻿* {
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    padding-top: 75px;
+    font-size: 8em;
+}
+
+nav {
+    font-size: 3em;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    color: #99a1b4;
+}
+
+ul {
+    display: inline-flex;
+    padding-bottom: 25px;
+}
+
+li {
+    list-style-type: none;
+}

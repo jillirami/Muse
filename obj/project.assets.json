@@ -12077,11 +12077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jillianne.ramirez/Muse/Muse/Muse.csproj",
+      "projectUniqueName": "/Users/jillianne.ramirez/Muse/Muse.csproj",
       "projectName": "Muse",
-      "projectPath": "/Users/jillianne.ramirez/Muse/Muse/Muse.csproj",
+      "projectPath": "/Users/jillianne.ramirez/Muse/Muse.csproj",
       "packagesPath": "/Users/jillianne.ramirez/.nuget/packages/",
-      "outputPath": "/Users/jillianne.ramirez/Muse/Muse/obj/",
+      "outputPath": "/Users/jillianne.ramirez/Muse/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

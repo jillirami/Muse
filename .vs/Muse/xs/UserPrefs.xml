@@ -3,8 +3,14 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Muse" expanded="True" selected="True">
-            <Node name="Muse" expanded="True" />
+          <Node name="Muse" expanded="True">
+            <Node name="Muse" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Privacy.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

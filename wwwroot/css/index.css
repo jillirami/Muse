@@ -35,9 +35,12 @@ h1 {
     padding-top: 25px;
 }
 
+#begin {
+    color: darkgrey;
+}
+
 .link:hover {
     color: #424242;
-    color: lightgray;
 }
 
 section {
@@ -47,7 +50,7 @@ section {
     bottom: 25px;
 }
 
-.nav:hover {
+.nav:hover, #privacy:hover {
     text-decoration: underline;
 }
 

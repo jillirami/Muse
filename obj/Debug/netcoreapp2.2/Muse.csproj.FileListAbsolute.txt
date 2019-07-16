@@ -67,6 +67,7 @@
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.Views.dll
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.Views.pdb
+/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csprojAssemblyReference.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csproj.CoreCompileInputs.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorAssemblyInfo.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorAssemblyInfo.cs

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e2f2ff;
+    background-color: white;
 }
 
 @keyframes fadeIn {
@@ -19,52 +19,41 @@ body {
 }
 
 header {
-    background: radial-gradient(closest-side, white, #e2f2ff);
+    display: flex;
+    flex-direction: column;
+    min-height: 65vh;
+    max-height: 75vh;
+    max-width: 100vw;
     padding-top: 75px;
     color: #101010;
     letter-spacing: .1em;
+    font-size: 3em;
     text-shadow: -1px -1px 1px #000, 2px 2px 1px #262626;
 }
 
 h1 {
-    font-size: 15em;
-}
-
-nav {
-    font-size: 3em;
-    color: #101010;
-    letter-spacing: .1em;
-    text-shadow: -1px -1px 1px #000, 2px 2px 1px #262626;
+    padding-top: 25px;
 }
 
 .link:hover {
     color: #424242;
+    color: lightgray;
 }
 
 section {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     bottom: 25px;
-    height: 50px;
 }
 
-ul {
-    display: inline-flex;
-    padding-bottom: 20px;
-}
-
-li {
-    list-style-type: none;
-}
-
-li:hover {
+.nav:hover {
     text-decoration: underline;
 }
 
 footer {
     position: absolute;
     bottom: 5px;
-}
-
-#privacy:hover {
-    text-decoration: underline;
+    color: gray;
+    font-size: 0.8em;
 }

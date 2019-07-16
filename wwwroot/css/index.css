@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #e2f2ff;
 }
 
 @keyframes fadeIn {
@@ -19,6 +19,7 @@ body {
 }
 
 header {
+    background: radial-gradient(closest-side, white, #e2f2ff);
     padding-top: 75px;
     color: #101010;
     letter-spacing: .1em;
@@ -40,9 +41,9 @@ nav {
     color: #424242;
 }
 
-footer {
+section {
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     height: 50px;
 }
 
@@ -56,5 +57,14 @@ li {
 }
 
 li:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+}
+
+#privacy:hover {
     text-decoration: underline;
 }

@@ -14,9 +14,16 @@
     }
 }
 
+body {
+    border: 5px solid red;
+    /*background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);*/
+    background-color: black;
+}
+
 header {
     padding-top: 75px;
     font-size: 8em;
+    color: red;
 }
 
 nav {

@@ -60,8 +60,6 @@
 /Users/jillianne.ramirez/Muse/Muse/obj/Debug/netcoreapp2.2/Muse.dll
 /Users/jillianne.ramirez/Muse/Muse/obj/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/Muse/obj/Debug/netcoreapp2.2/Muse.csproj.CopyComplete
-/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.dll
-/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.deps.json
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.runtimeconfig.json
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.runtimeconfig.dev.json
@@ -69,7 +67,6 @@
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.Views.dll
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.Views.pdb
-/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csprojAssemblyReference.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csproj.CoreCompileInputs.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorAssemblyInfo.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorAssemblyInfo.cs
@@ -90,4 +87,6 @@
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorTargetAssemblyInfo.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorTargetAssemblyInfo.cs
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.Views.pdb
+/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.dll
+/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csproj.CopyComplete

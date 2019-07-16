@@ -4,6 +4,10 @@
     animation-duration: 3s;
 }
 
+body {
+    background-color: white;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -14,33 +18,43 @@
     }
 }
 
-body {
-    border: 5px solid red;
-    /*background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);*/
-    background-color: black;
-}
-
 header {
     padding-top: 75px;
-    font-size: 8em;
-    color: red;
+    color: #101010;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #000, 2px 2px 1px #262626;
+}
+
+h1 {
+    font-size: 15em;
 }
 
 nav {
     font-size: 3em;
+    color: #101010;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #000, 2px 2px 1px #262626;
+}
+
+.link:hover {
+    color: #424242;
 }
 
 footer {
     position: absolute;
     bottom: 10px;
-    color: #99a1b4;
+    height: 50px;
 }
 
 ul {
     display: inline-flex;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 li {
     list-style-type: none;
+}
+
+li:hover {
+    text-decoration: underline;
 }

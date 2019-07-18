@@ -67,7 +67,6 @@
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.Views.dll
 /Users/jillianne.ramirez/Muse/bin/Debug/netcoreapp2.2/Muse.Views.pdb
-/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csprojAssemblyReference.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csproj.CoreCompileInputs.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorAssemblyInfo.cache
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.RazorAssemblyInfo.cs
@@ -79,6 +78,7 @@
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Razor/Views/Home/Homepage.g.cshtml.cs
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs
+/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Razor/Views/Journal/Entry.g.cshtml.cs
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.g.cshtml.cs
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
@@ -91,3 +91,4 @@
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.dll
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csproj.CopyComplete
+/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csprojAssemblyReference.cache

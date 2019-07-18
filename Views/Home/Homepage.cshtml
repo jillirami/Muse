@@ -6,16 +6,7 @@
     <link rel="stylesheet" href="~/css/homepage.css" type="text/css"/>
 }
 
-<header>
-    <a class="link" asp-area="" asp-controller="Home" asp-action="Index">
-        <h1>MUSE</h1>
-    </a>
 
-    <p id="greeting">Good Day Human!</p>
-    <a id="settings-link" class="link" href="Settings.cshtml">
-        <h6 id="settings-border">SETTINGS</h6>
-    </a>
-</header>
 <h1 id="quote">QUOTE OF THE DAY</h1>
 <section>
     <div>
@@ -28,7 +19,7 @@
         </a>
     </div>
     <div>
-        <a class="link" href="Journal.cshtml">
+        <a class="link"asp-area="" asp-controller="Journal" asp-action="Entry">
             <h2>Journal</h2>
             <div class="subdiv">
                 Phrases phrases phrases

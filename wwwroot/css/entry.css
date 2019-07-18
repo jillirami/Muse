@@ -29,3 +29,7 @@ header > * {
     border-radius: 10px;
     padding: 3px;
 }
+
+form {
+    width: 50vw;
+}

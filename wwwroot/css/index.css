@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: white;
+   max-height: 100vh;
+   max-width: 100vw;
 }
 
 @keyframes fadeIn {
@@ -21,7 +22,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    min-height: 65vh;
+    min-height: 60vh;
     max-height: 75vh;
     max-width: 100vw;
     padding-top: 150px;
@@ -29,7 +30,6 @@ header {
     letter-spacing: .1em;
     font-size: 3em;
     text-shadow: -1px -1px 1px #000, 2px 2px 1px #262626;
-    color: blue;
 }
 
 #begin {
@@ -42,9 +42,15 @@ header {
 
 section {
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: 35px;
+    justify-content: space-around;
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav:hover, #privacy:hover {
@@ -53,6 +59,8 @@ section {
 
 footer {
     position: absolute;
+    left: 0;
+    right: 0;
     bottom: 5px;
     color: gray;
     font-size: 0.8em;

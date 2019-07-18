@@ -33,3 +33,8 @@ header > * {
 form {
     width: 50vw;
 }
+
+img {
+    max-width: 50%;
+    height: auto;
+}

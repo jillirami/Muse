@@ -91,4 +91,3 @@
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.dll
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.pdb
 /Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csproj.CopyComplete
-/Users/jillianne.ramirez/Muse/obj/Debug/netcoreapp2.2/Muse.csprojAssemblyReference.cache

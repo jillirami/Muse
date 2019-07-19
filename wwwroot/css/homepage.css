@@ -2,6 +2,7 @@
     border: 5px solid red;
     display: grid;
     grid-template: auto auto auto/ 1fr;
+    /*min-width: 500px;*/
 }
 
 header {
@@ -13,7 +14,6 @@ header {
 }
 
 header > * {
-    width: auto;
     display: flex;
     align-items: center;
 }
@@ -48,14 +48,17 @@ section {
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 div {
     border: 5px solid black;
     text-align: center;
     display: inline;
-    max-width: 55vh;
+    width: 30%;
+    /*min-width: 200px;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
 }
 
 .subdiv {

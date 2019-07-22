@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Muse",
+    "\\Muse\\Controllers",
+    "\\Muse\\Models",
+    "\\Muse\\Views",
+    "\\Muse\\Views\\Home",
+    "\\Muse\\wwwroot",
+    "\\Muse\\wwwroot\\css"
   ],
+  "SelectedNode": "\\Muse\\Models\\ErrorViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

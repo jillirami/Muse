@@ -1,6 +1,6 @@
 using System;
 
-namespace Muse_Redo.Models
+namespace Muse.Models
 {
     public class ErrorViewModel
     {

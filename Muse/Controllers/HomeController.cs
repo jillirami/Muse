@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Muse_Redo.Models;
+using Muse.Models;
 
-namespace Muse_Redo.Controllers
+namespace Muse.Controllers
 {
     public class HomeController : Controller
     {

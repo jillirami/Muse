@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] MUSE</title>
+    <link rel="stylesheet" href="~/css/frontpage.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>MUSE</h1>
+        <nav>
+            <a class="link" id="begin" asp-area="" asp-controller="Home" asp-action="Homepage">- BEGIN -</a>
+        </nav>
+    </header>
+    <section>
+        <a class="nav link" href="https://github.com/jillirami/Muse/blob/master/README.md">
+            ABOUT PROJECT
+        </a>
+        <a class="nav link" href="">
+            DEMO
+        </a>
+        <a class="nav link" href="https://jillirami.github.io/">
+            ABOUT CREATOR
+        </a>
+    </section>
+    <footer>
+        &copy; 2019 - Jillianne Ramirez - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="link" id="privacy">Privacy</a>
+    </footer>
+</body>
+</html>

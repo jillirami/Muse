@@ -1,7 +1,9 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Muse", "Muse.csproj", "{63B02291-AF63-4F49-9A8C-B3AD7D65C7E8}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Muse-Redo", "Muse-Redo\Muse-Redo.csproj", "{A7D9A859-4F70-4B9A-9B13-BBB2C22444DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{63B02291-AF63-4F49-9A8C-B3AD7D65C7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63B02291-AF63-4F49-9A8C-B3AD7D65C7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63B02291-AF63-4F49-9A8C-B3AD7D65C7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63B02291-AF63-4F49-9A8C-B3AD7D65C7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D9A859-4F70-4B9A-9B13-BBB2C22444DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D9A859-4F70-4B9A-9B13-BBB2C22444DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D9A859-4F70-4B9A-9B13-BBB2C22444DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D9A859-4F70-4B9A-9B13-BBB2C22444DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DA9B7E3-0768-470C-9D34-B8276F315662}
 	EndGlobalSection
 EndGlobal

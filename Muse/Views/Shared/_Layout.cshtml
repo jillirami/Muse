@@ -4,17 +4,17 @@
     <meta charset="utf-8" />
     <title>@ViewData["Title"]</title>
 
-    <link rel="stylesheet" href="~/css/site.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/Site.css" type="text/css" />
     @RenderSection("Styles", required: false)
 </head>
 <body>
     <header>
-        <a class="link" asp-area="" asp-controller="Home" asp-action="Index">
+        <a class="link" asp-area="" asp-controller="Home" asp-action="Frontpage">
             <h1 id="frontpagelink">MUSE</h1>
         </a>
 
         <!-- <p id="greeting">Good Day Human!</p> -->
-        <a id="settings-link" class="link" href="Settings.cshtml">
+        <a id="settings-link" class="link">
             <h6 id="settings-border">SETTINGS</h6>
         </a>
     </header>

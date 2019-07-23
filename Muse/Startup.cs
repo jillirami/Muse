@@ -62,6 +62,11 @@ namespace Muse
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Frontpage}/{id?}");
+
+                //routes.MapRoute(
+                  //  name: "Studen",
+                    //template: "students/{id}",
+                   // defaults: new { controller = "Student", action = "Index" });
             });
         }
     }

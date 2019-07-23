@@ -19,16 +19,35 @@ namespace Muse.Controllers
         }
 
         // GET: Users
-        public async Task<IActionResult> Index(string searchEmail, string searchPassword)
+        public async Task<IActionResult> Index()
         {
-            var user = from u in _context.User
-                        select u;
-            
-            if (!String.IsNullOrEmpty(searchEmail))
-            {
-                user = user.Where(s => s.Email.Equals(searchEmail) && s.Password.Equals(searchPassword));
-            }
             return View(await _context.User.ToListAsync());
+        }
+
+
+        public IActionResult Signin(string searchEmail, string searchPassword)
+        {
+            var users = from u in _context.User
+                        select u;
+
+            if (!String.IsNullOrEmpty(searchEmail) && !String.IsNullOrEmpty(searchEmail))
+            {
+               var user = users.SingleOrDefault(s => s.Email.Equals(searchEmail) && s.Password.Equals(searchPassword));
+
+            //    if (user != null)
+              //  {
+                //    return Content($"the value of user is: {user.Email} and usersssss {users}");
+               // }
+            }
+            //if (user != users)
+            //{
+             //   return RedirectToAction("Homepage", "Home");
+            //}
+
+          //  Console.WriteLine(user);
+            // return View(await user.ToListAsync());
+           return RedirectToAction("Create", "Users");
+           // return Content("nope");
         }
 
         // GET: Users/Details/5

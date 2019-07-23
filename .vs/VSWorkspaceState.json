@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Muse",
+    "\\Muse\\Controllers",
+    "\\Muse\\Models",
+    "\\Muse\\Properties",
+    "\\Muse\\Views",
+    "\\Muse\\wwwroot"
   ],
   "PreviewInSolutionExplorer": false
 }

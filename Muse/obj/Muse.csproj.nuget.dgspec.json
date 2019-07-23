@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse\\Muse.csproj": {}
+    "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse\\Muse.csproj": {
+    "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse\\Muse.csproj",
+        "projectUniqueName": "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse.csproj",
         "projectName": "Muse",
-        "projectPath": "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse\\Muse.csproj",
+        "projectPath": "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse.csproj",
         "packagesPath": "C:\\Users\\Jillianne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\Muse\\obj\\",
+        "outputPath": "C:\\Users\\Jillianne\\Desktop\\Muse\\Muse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
             }
           },
           "imports": [

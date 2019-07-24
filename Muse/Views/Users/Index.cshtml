@@ -1,66 +1,90 @@
 ﻿@model IEnumerable<Muse.Models.User>
 
 @{
-    ViewData["Title"] = "Sign In";
+    Layout = null;
 }
 
-<p><strong> @TempData["Error"] </strong></p>
-<h2>Sign In</h2>
 
- <form asp-controller="Users" asp-action="Signin">
-    <p>
-        Email: <input type="text" name="SearchEmail" required>
-    </p>
-    <p>
-        Password: <input type="password" name="SearchPassword" required>
-        <input type="submit" value="Sign In"/>
-    </p>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Sign In</title>
+    <link rel="stylesheet" href="~/css/Site.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/Signin.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <a class="link" asp-area="" asp-controller="Users" asp-action="Frontpage">
+            <h1 id="frontpagelink">MUSE</h1>
+        </a>
+    </header>
+    <section>
+        <p><strong> @TempData["Error"] </strong></p>
+        <h2>Sign In</h2>
 
-<p>
-    No Account? <a class="link" asp-action="Create">Sign Up!</a>
-</p>
+        <form asp-controller="Users" asp-action="Signin">
+            <p>
+                Email: <input type="text" name="SearchEmail" required>
+            </p>
+            <p>
+                Password: <input type="password" name="SearchPassword" required>
+                <input type="submit" value="Sign In" />
+            </p>
+        </form>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zip)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+        <p>
+            No Account? <a class="link" asp-action="Create">Sign Up!</a>
+        </p>
+    </section>
+</body>
+</html>
+
+
+
+
+@*<table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Zip)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Password)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Zip)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Password)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Zip)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Password)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+*@

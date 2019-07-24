@@ -53,15 +53,17 @@ namespace Muse.Controllers
         }
 
         // GET: Users/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {                       
-            if (id == null)
+        public async Task<IActionResult> Details()
+        {
+            int? userId = HttpContext.Session.GetInt32("userId");
+
+            if (!userId.HasValue)
             {
                 return NotFound();
             }
 
             var user = await _context.User
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id == userId);
             if (user == null)
             {
                 return NotFound();

@@ -72,7 +72,7 @@ using Muse.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(54, 241, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6831f47e9b6436d8d5e92cf08cc976c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e45f8a34e5b546deb40f9d51af197bbd", async() => {
                 BeginContext(60, 121, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>");
                 EndContext();
@@ -87,7 +87,7 @@ using Muse.Models;
                 WriteLiteral(" MUSE</title>\r\n    ");
                 EndContext();
                 BeginContext(218, 68, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6c2c989c72154db89069f82d239cd12f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f2ad88a3e1f94caea4e7b3d9de6e82cf", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -122,12 +122,12 @@ using Muse.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(297, 717, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae61771fe72648669e5d7f49b92c4a5a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c621e718e7334c0298090e388e4ace94", async() => {
                 BeginContext(303, 66, true);
                 WriteLiteral("\r\n    <header>\r\n        <h1>MUSE</h1>\r\n        <nav>\r\n            ");
                 EndContext();
                 BeginContext(369, 94, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03523e5a8d164ae98665b0d975c83fc6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c5b2d4a4019406687bcf80319ebb746", async() => {
                     BeginContext(450, 9, true);
                     WriteLiteral("- BEGIN -");
                     EndContext();
@@ -170,7 +170,7 @@ using Muse.Models;
         &copy; 2019 - Jillianne Ramirez - ");
                 EndContext();
                 BeginContext(894, 96, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19453b71017a40c69b0634d2ca55e0f1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d56fb9663f2142789171c1d6a249a894", async() => {
                     BeginContext(979, 7, true);
                     WriteLiteral("Privacy");
                     EndContext();

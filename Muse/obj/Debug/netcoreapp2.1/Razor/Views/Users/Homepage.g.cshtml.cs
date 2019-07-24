@@ -73,7 +73,7 @@ using Muse.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(96, 67, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0f2d9025033e48f99ef5592303f4fe0c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cd5ffad4d6224b27b46ff8bd3fef745f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -111,7 +111,7 @@ using Muse.Models;
         ");
             EndContext();
             BeginContext(483, 231, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e61130ad7034c1b91ca0db66e43ee91", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d7f6de2fd454f4d978e9bd2a0dd600a", async() => {
                 BeginContext(543, 167, true);
                 WriteLiteral("\r\n            <h2>Journal</h2>\r\n            <div class=\"subdiv\">\r\n                Phrases phrases phrases\r\n            </div>\r\n            <h5>\"what is\"</h5>\r\n        ");
                 EndContext();

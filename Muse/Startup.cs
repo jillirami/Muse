@@ -55,7 +55,7 @@ namespace Muse
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Users/Error");
                 app.UseHsts();
             }
 

@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Muse.Models.User
+
+@{
     ViewData["Title"] = "Homepage";
 }
 
@@ -18,7 +20,7 @@
         </a>
     </div>
     <div class="div">
-        <a class="link">
+        <a class="link" asp-controller="Musings" asp-action="Index">
             <h2>Journal</h2>
             <div class="subdiv">
                 Phrases phrases phrases

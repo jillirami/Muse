@@ -6,7 +6,9 @@
     "\\Muse\\Models",
     "\\Muse\\Properties",
     "\\Muse\\Views",
+    "\\Muse\\Views\\Users",
     "\\Muse\\wwwroot"
   ],
+  "SelectedNode": "\\Muse.sln",
   "PreviewInSolutionExplorer": false
 }

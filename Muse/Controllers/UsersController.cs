@@ -21,33 +21,31 @@ namespace Muse.Controllers
 
         // GET: Users
         public async Task<IActionResult> Index()
-        {
+        {            
             return View(await _context.User.ToListAsync());
         }
 
 
         public IActionResult Signin(string searchEmail, string searchPassword)
-        {
+        {                        
             var users = from u in _context.User
                         select u;
 
-            if (!String.IsNullOrEmpty(searchEmail) && !String.IsNullOrEmpty(searchEmail))
+            var user = users.SingleOrDefault(s => s.Email.Equals(searchEmail));
+            if (user != null)
             {
-               var user = users.SingleOrDefault(s => s.Email.Equals(searchEmail) && s.Password.Equals(searchPassword));
+                user = users.SingleOrDefault(s => s.Password.Equals(searchPassword));
 
-            //    if (user != null)
-              //  {
-                //    return Content($"the value of user is: {user.Email} and usersssss {users}");
-               // }
+                if (user != null)
+                {
+                    return RedirectToAction("Homepage", new { id = user.Id });
+                }
+                ViewBag.ErrorMessage = "Password incorrect";
+            //    return Content($"the value of user is: {user.Email} and usersssss {users}");
             }
-            //if (user != users)
-            //{
-             //   return RedirectToAction("Homepage", "Home");
-            //}
 
-          //  Console.WriteLine(user);
-            // return View(await user.ToListAsync());
-           return RedirectToAction("Create", "Users");
+            TempData["Error"] = "Email not found or matched";
+            return RedirectToAction("Create");
            // return Content("nope");
         }
 
@@ -71,7 +69,7 @@ namespace Muse.Controllers
 
         // GET: Users/Create
         public IActionResult Create()
-        {
+        {            
             return View();
         }
 
@@ -181,9 +179,21 @@ namespace Muse.Controllers
             return View();
         }
 
-        public IActionResult Homepage(int? id)
+        public async Task<IActionResult> Homepage(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.User
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
         }
 
         public IActionResult Contact()

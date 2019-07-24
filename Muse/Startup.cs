@@ -33,8 +33,14 @@ namespace Muse
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddSession(so =>
+            {
+                so.IdleTimeout = TimeSpan.FromSeconds(60);
+                so.Cookie.HttpOnly = true;
+                so.Cookie.IsEssential = true;
+            });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddSessionStateTempDataProvider();
 
             services.AddDbContext<MuseContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("MuseContext")));
@@ -55,6 +61,7 @@ namespace Muse
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>

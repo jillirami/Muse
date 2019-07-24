@@ -5520,7 +5520,7 @@
       ]
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
-      "sha512": "fe1+dpy+eM4IX1zodsvkihO1Spuj0NecfStWzvkYoMo7/ziOsqSv4vFK36ZpBfHa4gpdCEwaU46EPzdq+ZDYhQ==",
+      "sha512": "6E0QlZ4FnzL2KzNN/T4ld2Qd3x5TsbHctR0Q7bjvURN9PuKFRIZMTDtO36EmVzjzuaqLrckFgNpm2KIS1u925g==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "hasTools": true,
@@ -5884,7 +5884,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "cLexm0172ysfi1etIr+MjBFi9dAw2PEHK1IQy3pciX2LXmZBFQpf3Bt5o0UaCg/jSi0hkxmaR65tB6nvVVuBiw==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "hasTools": true,
@@ -9684,7 +9684,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "j/LyZh1PPGTzTLkxDf9j5SzOIVBVC0IqwNpBDISZo6oGNz3vNgsTHuYNai6ywVQKLJ1AfLcKd78Xzow5heAUoQ==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [

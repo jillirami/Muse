@@ -71,7 +71,7 @@ using Muse.Models;
             WriteLiteral("\r\n<h2>Sign In</h2>\r\n\r\n ");
             EndContext();
             BeginContext(106, 282, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e6b52b34e4b4dc598bc492447e1f5d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50fbf33b758045888e8a72ee8a259b9e", async() => {
                 BeginContext(155, 226, true);
                 WriteLiteral("\r\n    <p>\r\n        Email: <input type=\"text\" name=\"SearchEmail\" required>\r\n    </p>\r\n    <p>\r\n        Password: <input type=\"password\" name=\"SearchPassword\" required>\r\n        <input type=\"submit\" value=\"Sign In\"/>\r\n    </p>\r\n");
                 EndContext();
@@ -97,7 +97,7 @@ using Muse.Models;
             WriteLiteral("\r\n\r\n<p>\r\n    No Account? ");
             EndContext();
             BeginContext(413, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "596cb62ffb444da1a294bf54f47f3bc0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "387159cc21544b7ab667d7adeb8a7a90", async() => {
                 BeginContext(449, 8, true);
                 WriteLiteral("Sign Up!");
                 EndContext();
@@ -209,7 +209,7 @@ using Muse.Models;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1515, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2581b21eddd747a38b4522278fa6564a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e942a0badc947be80c52faa134ec411", async() => {
                 BeginContext(1560, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -244,7 +244,7 @@ using Muse.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1592, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e5803f483f64ff092c04a8cd1d46d06", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "043c932c0de34dad973748c82b7154d5", async() => {
                 BeginContext(1640, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -279,7 +279,7 @@ using Muse.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1675, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b69f11e3ed024bdfac3fb74db2099ca7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5024d0562874dee83ff5e902e95f503", async() => {
                 BeginContext(1722, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

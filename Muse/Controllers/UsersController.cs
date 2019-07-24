@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Muse.Models;
 using System.Diagnostics;
@@ -38,10 +39,12 @@ namespace Muse.Controllers
 
                 if (user != null)
                 {
-                    return RedirectToAction("Homepage", new { id = user.Id });
+                    HttpContext.Session.SetInt32("userId", user.Id);                    
+                    return RedirectToAction("Homepage");
                 }
-                ViewBag.ErrorMessage = "Password incorrect";
-            //    return Content($"the value of user is: {user.Email} and usersssss {users}");
+                TempData["Error"] = "Password incorrect";
+                return RedirectToAction("Index");
+                //    return Content($"the value of user is: {user.Email} and usersssss {users}");
             }
 
             TempData["Error"] = "Email not found or matched";
@@ -51,7 +54,7 @@ namespace Muse.Controllers
 
         // GET: Users/Details/5
         public async Task<IActionResult> Details(int? id)
-        {
+        {                       
             if (id == null)
             {
                 return NotFound();
@@ -179,15 +182,17 @@ namespace Muse.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Homepage(int? id)
+        public async Task<IActionResult> Homepage()
         {
-            if (id == null)
+            int? userId = HttpContext.Session.GetInt32("userId");
+
+            if (!userId.HasValue)
             {
                 return NotFound();
             }
 
             var user = await _context.User
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id == userId);
             if (user == null)
             {
                 return NotFound();

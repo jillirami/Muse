@@ -23,9 +23,13 @@ namespace Muse.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {            
-            return View(await _context.User.ToListAsync());
+           int ? userId = HttpContext.Session.GetInt32("userId");
+            if (userId == 0 || userId == null)
+            {
+                return View(await _context.User.ToListAsync());
+            }
+            return RedirectToAction("Homepage");
         }
-
 
         public IActionResult Signin(string searchEmail, string searchPassword)
         {

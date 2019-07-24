@@ -28,16 +28,15 @@ namespace Muse.Controllers
 
 
         public IActionResult Signin(string searchEmail, string searchPassword)
-        {                        
+        {
+            HttpContext.Session.SetInt32("userId", 0);
             var users = from u in _context.User
                         select u;
 
             var user = users.SingleOrDefault(s => s.Email.Equals(searchEmail));
             if (user != null)
             {
-                user = users.SingleOrDefault(s => s.Password.Equals(searchPassword));
-
-                if (user != null)
+                if (user.Password.Equals(searchPassword))
                 {
                     HttpContext.Session.SetInt32("userId", user.Id);                    
                     return RedirectToAction("Homepage");
@@ -95,18 +94,22 @@ namespace Muse.Controllers
         }
 
         // GET: Users/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit()
         {
-            if (id == null)
+            int? userId = HttpContext.Session.GetInt32("userId");
+
+            if (!userId.HasValue)
             {
                 return NotFound();
             }
 
-            var user = await _context.User.FindAsync(id);
+            var user = await _context.User
+                .FindAsync(userId);
             if (user == null)
             {
                 return NotFound();
             }
+
             return View(user);
         }
 
@@ -115,8 +118,9 @@ namespace Muse.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Zip,Email,Password")] User user)
+        public async Task<IActionResult> Edit([Bind("Id,Name,Zip,Email,Password")] User user)
         {
+            int? id = HttpContext.Session.GetInt32("userId");
             if (id != user.Id)
             {
                 return NotFound();
@@ -140,7 +144,7 @@ namespace Muse.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details));
             }
             return View(user);
         }

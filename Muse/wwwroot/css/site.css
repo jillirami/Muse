@@ -12,9 +12,9 @@
     color: black;
 }
 
-    .link:hover {
-        font-weight: bold;
-    }
+.link:hover {
+    font-weight: bold;
+}
 
 header {
     display: flex;
@@ -49,7 +49,12 @@ header {
     background-color: rgb(241, 241, 241);
 }
 
-    #settings-border:hover {
-        border: 1px double rgb(241, 241, 241);
-        background-color: rgb(231, 231, 231);
-    }
+#settings-border:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+}
+
+
+.error {
+    color: red;
+}

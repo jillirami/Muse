@@ -31,6 +31,12 @@ namespace Muse.Controllers
             return RedirectToAction("Homepage");
         }
 
+        public IActionResult Signout()
+        {
+            HttpContext.Session.SetInt32("userId", 0);
+            return RedirectToAction("Homepage");
+        }
+
         public IActionResult Signin(string searchEmail, string searchPassword)
         {
             HttpContext.Session.SetInt32("userId", 0);
@@ -62,14 +68,14 @@ namespace Muse.Controllers
 
             if (!userId.HasValue)
             {
-                return NotFound();
+                return RedirectToAction("Homepage");
             }
 
             var user = await _context.User
                 .FirstOrDefaultAsync(m => m.Id == userId);
             if (user == null)
             {
-                return NotFound();
+                return RedirectToAction("Homepage");
             }
 
             return View(user);

@@ -1,50 +1,69 @@
 ﻿@model Muse.Models.User
 
 @{
-    ViewData["Title"] = "Create";
+    Layout = null;
 }
 
-<p class="error"><strong> @TempData["Error"] </strong></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] Sign Up</title>
+        <link rel="stylesheet" href="~/css/Site.css" type="text/css" />
+        <link rel="stylesheet" href="~/css/UsersCreate.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <a class="link" asp-area="" asp-controller="Users" asp-action="Frontpage">
+                <h1 id="frontpagelink">MUSE</h1>
+            </a>
+        </header>
+        <h2>Create</h2>
 
-<h2>Create</h2>
+        <div>
+            <section>
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <p>
+                        <label asp-for="Name" class="control-label"></label>:
+                    </p>
+                    <p>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </p>
+                    
+                    <p>
+                        <label asp-for="Zip" class="control-label"></label>:
+                    </p>
+                    <p>
+                        <input asp-for="Zip" class="form-control" />
+                        <span asp-validation-for="Zip" class="text-danger"></span>
+                    </p>
+                    <p>
+                        <label asp-for="Email" class="control-label"></label>:
+                    </p>
+                    <p>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </p>
+                    <p>
+                        <label asp-for="Password" class="control-label"></label>:
+                    </p>
+                    <p>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </p>
+                    
+                    <input type="submit" value="Sign Up" id="create" />
+                </form>
+            </section>
+        </div>
 
-<h4>User</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Zip" class="control-label"></label>
-                <input asp-for="Zip" class="form-control" />
-                <span asp-validation-for="Zip" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </form>
-    </div>
-</div>
+        <div>
+            <a class="link" asp-action="Index">Back to Sign In</a>
+        </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        <script>@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}</script>
+    </body>
+</html>

@@ -30,3 +30,7 @@ input {
     background-color: rgb(231, 231, 231);
     font-weight: bold;
 }
+
+.control-label {
+    font-weight: bold;
+}

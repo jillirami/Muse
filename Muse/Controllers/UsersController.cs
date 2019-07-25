@@ -34,7 +34,7 @@ namespace Muse.Controllers
         public IActionResult Signout()
         {
             HttpContext.Session.SetInt32("userId", 0);
-            return RedirectToAction("Homepage");
+            return RedirectToAction("Frontpage");
         }
 
         public IActionResult Signin(string searchEmail, string searchPassword)

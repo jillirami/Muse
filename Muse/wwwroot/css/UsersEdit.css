@@ -17,3 +17,16 @@ input {
     padding-left: 3px;
     padding-right: 3px;
 }
+
+#save {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px double rgb(231, 231, 231);
+    background-color: rgb(241, 241, 241);
+}
+
+#save:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+}

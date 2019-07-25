@@ -35,7 +35,7 @@ namespace Muse
 
             services.AddSession(so =>
             {
-                so.IdleTimeout = TimeSpan.FromSeconds(60);
+                so.IdleTimeout = TimeSpan.FromSeconds(600);
                 so.Cookie.HttpOnly = true;
                 so.Cookie.IsEssential = true;
             });

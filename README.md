@@ -3,6 +3,6 @@
 
 
 
-![Muse Logo](Muse/wwwroot/favicon_io/android-chrome-512x512.png)
+![Muse Logo](Muse/wwwroot/favicon_io/android-chrome-192x192.png)
 
 

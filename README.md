@@ -1,5 +1,5 @@
-# Muse 
-## (Ada Developers Academy) Capstone Project by: Jillianne Ramirez
+# MUSE by: Jillianne Ramirez ![Muse Logo](MuseIcon.jpg)
+#### Ada Developers Academy Capstone Project
 
 
-![Muse Logo](MuseIcon.jpg)
+

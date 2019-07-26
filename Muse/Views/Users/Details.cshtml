@@ -12,14 +12,18 @@
 
 <div>
     <section>
-        <p><b>@Html.DisplayNameFor(model => model.Name)</b>: @Html.DisplayFor(model => model.Name)</p>
-        <p><b>@Html.DisplayNameFor(model => model.Zip)</b>: @Html.DisplayFor(model => model.Zip)</p>
-        <p><b>@Html.DisplayNameFor(model => model.Email)</b>: @Html.DisplayFor(model => model.Email)</p>
-        <p><b>@Html.DisplayNameFor(model => model.Password)</b>: @Html.HiddenFor(model => model.Password) ********</p>
+        <p class="attrib"><b>@Html.DisplayNameFor(model => model.Name)</b>: @Html.DisplayFor(model => model.Name)</p>
+        <p class="attrib"><b>@Html.DisplayNameFor(model => model.Zip)</b>: @Html.DisplayFor(model => model.Zip)</pclass="attrib">
+        <p class="attrib"><b>@Html.DisplayNameFor(model => model.Email)</b>: @Html.DisplayFor(model => model.Email)</p>
+        <p class="attrib"><b>@Html.DisplayNameFor(model => model.Password)</b>: @Html.HiddenFor(model => model.Password) ********</p>
     </section>
 </div>
-<div>
+<div id="options">
     <a class="option link" asp-action="Home">Return to Home</a> |
     <a class="option link" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a class="option link" asp-action="Signout">Log Out</a>
+</div>
+
+<div id="delete">
+    <a class="option link" asp-action="Delete" asp-route-id="@Model.Id">Delete Account</a>
 </div>

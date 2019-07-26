@@ -2,14 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\Muse",
-    "\\Muse\\Controllers",
-    "\\Muse\\Models",
-    "\\Muse\\Properties",
     "\\Muse\\Views",
     "\\Muse\\Views\\Shared",
     "\\Muse\\Views\\Users",
     "\\Muse\\wwwroot",
-    "\\Muse\\wwwroot\\css"
+    "\\Muse\\wwwroot\\css",
+    "\\Muse\\wwwroot\\lib",
+    "\\Muse\\wwwroot\\lib\\bootstrap",
+    "\\Muse\\wwwroot\\lib\\jquery-validation-unobtrusive"
   ],
   "SelectedNode": "\\Muse.sln",
   "PreviewInSolutionExplorer": false

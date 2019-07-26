@@ -63,7 +63,7 @@ using Muse.Models;
             WriteLiteral("\r\n<h1>Muse about Meaning</h1>\r\n\r\n<h1 id=\"quote\">QUOTE OF THE DAY</h1>\r\n\r\n");
             EndContext();
             BeginContext(116, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c21e0d6e5553408eb596ad72238274c8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2ee905cc7bca4f47adf5c2dde22c654a", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -86,7 +86,7 @@ using Muse.Models;
                 WriteLiteral("\r\n    <script src=\"https://code.jquery.com/jquery-3.3.1.js\"></script>\r\n    <script src=\"https://unpkg.com/axios/dist/axios.min.js\"></script>\r\n    ");
                 EndContext();
                 BeginContext(320, 59, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cdf5166443c94f37a9cd7a8d4f6119cf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a9a1011a89445af9f64ee104b6ab25d", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

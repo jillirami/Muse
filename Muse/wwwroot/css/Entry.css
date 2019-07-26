@@ -1,0 +1,27 @@
+﻿h2, .api, #quote {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.form-control {
+    margin-bottom: 5px;
+}
+
+#entry {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px double rgb(231, 231, 231);
+    background-color: rgb(241, 241, 241);
+}
+
+#entry:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+}

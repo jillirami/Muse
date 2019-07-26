@@ -1,8 +1,13 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "News";
 }
 
-<h1>Muse about the News</h1>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Entry.css" type="text/css" />
+}
 
-<partial name="../Musings/Create"/>
+<h2>Muse about the News</h2>
+
+<section class="api">API calls assign value to prompt section</section>
+
+<partial name="../Musings/Create" />

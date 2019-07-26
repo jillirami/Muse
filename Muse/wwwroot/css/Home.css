@@ -13,20 +13,20 @@ h2 {
 }
 
 #greeting {
-    font-size: 3em;
-    margin-top: 50px;
-    color: #E8E8E8;
-    grid-row: 2;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 25px;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: white;
     animation-name: fadeIn;
     animation-duration: 1s;
+    letter-spacing: .1em;
 }
 
 @keyframes fadeIn {
-    0%{
+    0% {
         color: red;
+        text-shadow: -0.5px -0.5px 0.5px #505050, 1px 1px 0.5px #181818;
     }
     15% {
         color: orange;
@@ -36,18 +36,20 @@ h2 {
     }
     45% {
         color: lightgreen;
+        text-shadow: -0.5px -0.5px 0.5px #F8F8F8, 1px 1px 0.5px #D3D3D3;
     }
     60% {
         color: blue;
     }
     75% {
-        color: darkslateblue;
+        color: lightblue;
     }
     90% {
-        color: indigo;
+        color: lavender;
     }
     100% {
-        color: #E8E8E8;
+        color: white;
+        text-shadow: none;
     }
 }
 
@@ -70,8 +72,8 @@ section {
     border: 4px outset rgb(100, 100, 100);
     padding: 10px;
     margin: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 15px;
     width: 450px;
     min-height: 250px;
 }

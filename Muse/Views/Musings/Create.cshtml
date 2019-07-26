@@ -4,21 +4,26 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Entry.css" type="text/css" />
+}
 
-<h4>Musing</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div>
+    <section>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" placeholder="Title or Prompt"/>
+            <p>
+                <label asp-for="Title" class="control-label"></label>:
+            </p>
+            <p>
+                <input asp-for="Title" class="form-control" placeholder="Title, Subject or Prompt" />
                 <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SUDS" class="control-label"></label>
+            </p>
+
+            <p>
+                <label asp-for="SUDS" class="control-label"></label>:
+            </p>
+            <p>
                 <select asp-for="SUDS" class="form-control">
                     <option value="">--Subjective Units of Distress--</option>
                     <option value=0>0</option>
@@ -32,24 +37,34 @@
                     <option value=8>8</option>
                     <option value=9>9</option>
                     <option value=10>10</option>
+                    <option value=11>11</option>
                 </select>
-                <span asp-validation-for="SUDS" class="text-danger"></span><br />
-                <a href="https://www.havening.org/media/articles/04c490_42c325da785c49e5ba972866d7058c8a.pdf"><img src="~/images/funsuds.gif" alt="Click for More Information"></a>
-            </div>
-            <div class="form-group">
-                <label asp-for="Entry" class="control-label"></label>
+                <span asp-validation-for="SUDS" class="text-danger"></span>
+            </p>
+            <a href="https://www.havening.org/media/articles/04c490_42c325da785c49e5ba972866d7058c8a.pdf"><img src="~/images/funsuds.gif" alt="Click for More Information"></a>
+            <p>
+                <label asp-for="Entry" class="control-label"></label>:
+            </p>
+            <p>
                 <textarea asp-for="Entry" class="form-control" type="text"></textarea>
                 <span asp-validation-for="Entry" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit Entry" class="btn btn-default" />
-            </div>
+            </p>
+            @*
+                <p>
+                    <label asp-for="Aspirations" class="control-label"></label>:
+                </p>
+                <p>
+                    <textarea asp-for="Entry" class="form-control" type="text"></textarea>
+                    <span asp-validation-for="Entry" class="text-danger"></span>
+                </p>
+            *@
+            <input type="submit" value="Submit Entry" id="entry" />
         </form>
-    </div>
+    </section>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="link" asp-action="Index">Back to Timeline</a>
 </div>
 
 @section Scripts {

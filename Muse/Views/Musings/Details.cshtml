@@ -5,30 +5,23 @@
 }
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/MusingsDetails.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/MusingsDetail.css" type="text/css" />
 }
 
 <h2>Musing Details</h2>
 
 <div class="musing">
     <section>
-        <p class="namefor">
-            @Html.DisplayNameFor(model => model.Title):  @Html.DisplayFor(model => model.Title)
+        <p id="header">
+            <a class="namefor">
+                @Html.DisplayNameFor(model => model.Title):  <i>@Html.DisplayFor(model => model.Title)</i>
+            </a>
+            <a class="displayfor" id="date">
+                @Html.DisplayFor(model => model.Date)
+            </a>
         </p>
-        <p class="namefor" id="date">
-            @Html.DisplayNameFor(model => model.Date):
-        </p>
-        <p class="displayfor">
-            @Html.DisplayFor(model => model.Date)
-        </p>
-        <p class="namefor">
-            @Html.DisplayNameFor(model => model.SUDS):
-        </p>
-        <p class="displayfor">
-            @Html.DisplayFor(model => model.SUDS)
-        </p>
-        <p class="namefor">
-            @Html.DisplayNameFor(model => model.Entry):
+        <p class="namefor" id="suds">
+            @Html.DisplayNameFor(model => model.SUDS): @Html.DisplayFor(model => model.SUDS)
         </p>
         <p class="displayfor">
             @Html.DisplayFor(model => model.Entry)

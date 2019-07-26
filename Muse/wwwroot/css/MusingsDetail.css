@@ -5,11 +5,8 @@
 
 div {
     padding: 5px;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
-    grid-template: auto auto auto / auto auto;
 }
 
 .option {
@@ -21,20 +18,28 @@ div {
     border: 1px solid black;
 }
 
+#header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+#date {
+    font-weight: bold;
+}
+
+#suds {
+    margin-top: 5px;
+}
+
 .links {
      display: flex;
      justify-content: center;
 }
 
-
 .namefor {
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-#date {
-    grid-row: 1;
-    grid-column: 2;
 }
 
 .displayfor {

@@ -28,25 +28,32 @@ h2 {
         color: red;
         text-shadow: -0.5px -0.5px 0.5px #505050, 1px 1px 0.5px #181818;
     }
+
     15% {
         color: orange;
     }
+
     30% {
         color: yellow;
     }
+
     45% {
         color: lightgreen;
         text-shadow: -0.5px -0.5px 0.5px #F8F8F8, 1px 1px 0.5px #D3D3D3;
     }
+
     60% {
         color: blue;
     }
+
     75% {
         color: lightblue;
     }
+
     90% {
         color: lavender;
     }
+
     100% {
         color: white;
         text-shadow: none;
@@ -58,7 +65,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     width: 95%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     justify-content: center;
 }
 
@@ -72,8 +81,8 @@ section {
     border: 4px outset rgb(100, 100, 100);
     padding: 10px;
     margin: 5px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 15px;
-    width: 450px;
-    min-height: 250px;
+    width: 350px;
+    height: 350px;
 }

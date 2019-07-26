@@ -4,40 +4,47 @@
     ViewData["Title"] = "Edit";
 }
 
-<h2>Edit</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Edit.css" type="text/css" />
+}
 
-<h4>Musing</h4>
-<hr />
+<h2>Edit Musing</h2>
+
 <div class="row">
-    <div class="col-md-4">
+    <section>
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
+            <p>
                 <label asp-for="Title" class="control-label"></label>
+            </p>
+            <p>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            </p>
+            <p>
                 <label asp-for="Date" class="control-label"></label>
+            </p>
+            <p>
                 <input asp-for="Date" class="form-control" />
                 <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            </p>
+            <p>
                 <label asp-for="SUDS" class="control-label"></label>
+            </p>
+            <p>
                 <input asp-for="SUDS" class="form-control" />
                 <span asp-validation-for="SUDS" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Entry" class="control-label"></label>
+            </p>
+            <p><label asp-for="Entry" class="control-label"></label></p>
+            <p>
                 <input asp-for="Entry" class="form-control" />
                 <span asp-validation-for="Entry" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
-            </div>
+            </p>
+
+            <input type="submit" value="Save" id="save" />
         </form>
-    </div>
+    </section>
 </div>
 
 <div>

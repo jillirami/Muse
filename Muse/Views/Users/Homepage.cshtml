@@ -8,36 +8,26 @@
     <link rel="stylesheet" href="~/css/homepage.css" type="text/css" />
 }
 
-<h1 id="quote">QUOTE OF THE DAY</h1>
+<h1 id="quote">@Html.DisplayFor(model => model.Name)</h1>
+
 <section>
     <div class="div">
-        <a class="link">
-            <h2>Timeline</h2>
-            <div class="subdiv">
-                Words words words
-            </div>
-            <h5>"what has been"</h5>
+        <a class="link" asp-controller="Musings" asp-action="News">
+            <h2>Muse about the News</h2>
+            <img src="~/images/news.jpg" alt="Newspaper Outline">
         </a>
     </div>
     <div class="div">
         <a class="link" asp-controller="Musings" asp-action="Index">
-            <h2>Journal</h2>
-            <div class="subdiv">
-                Phrases phrases phrases
-            </div>
-            <h5>"what is"</h5>
+            <h2>- My Timeline -</h2>
+                <img src="~/images/timeline.jpg" alt="Timeline Outline">
         </a>
     </div>
     <div class="div">
-        <a class="link">
-            <h2>Aspirations</h2>
-            <div class="subdiv">
-                Terms terms terms
-            </div>
-            <h5>"what will be"</h5>
+        <a class="link" asp-controller="Musings" asp-action="Meaning">
+            <h2>Muse about Meaning</h2>
+            <img src="~/images/question.jpg" alt="Question Mark">
         </a>
     </div>
 </section>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script type="text/javascript" src="~/js/site.js"></script>
+

@@ -78,7 +78,7 @@ using Muse.Models;
             WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n    ");
             EndContext();
             BeginContext(100, 334, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7670a7484ac04fc98b9cb6c8dcefee92", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51ab6e9fc8b14c7d96dfedd68c81dbe5", async() => {
                 BeginContext(106, 133, true);
                 WriteLiteral("\r\n        <meta charset=\"utf-8\" />\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n        <title>");
                 EndContext();
@@ -93,7 +93,7 @@ using Muse.Models;
                 WriteLiteral(" Sign In</title>\r\n        ");
                 EndContext();
                 BeginContext(283, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "afea5fb0a01d4d2fb0b6df02a9b5aeb2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5c131ffe08004cd4aa1ec02cbb48aba4", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -113,7 +113,7 @@ using Muse.Models;
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(356, 65, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f29b5183155d4f8c8981741055d7ee38", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ec4da054f7a94b768a67182d58c1764b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -148,12 +148,12 @@ using Muse.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(440, 3075, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59d7560bdf4c4b81ba290e12486fef5b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5f994defc84476aa33527d0708c5dc5", async() => {
                 BeginContext(446, 32, true);
                 WriteLiteral("\r\n        <header>\r\n            ");
                 EndContext();
                 BeginContext(478, 142, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a71da830db84747a75ed97c8505af87", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2970c35200874a6d98aa1453ec384f17", async() => {
                     BeginContext(552, 64, true);
                     WriteLiteral("\r\n                <h1 id=\"frontpagelink\">MUSE</h1>\r\n            ");
                     EndContext();
@@ -190,7 +190,7 @@ using Muse.Models;
                 WriteLiteral(" </strong></p>\r\n            <h2>Sign In</h2>\r\n\r\n            <div>\r\n                ");
                 EndContext();
                 BeginContext(799, 669, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "953b4bd9d00746b7b2098ba6570250b2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2178b061c24947dab4a037ee812c48ab", async() => {
                     BeginContext(848, 613, true);
                     WriteLiteral(@"
                     <p class=""control-label"">
@@ -232,7 +232,7 @@ using Muse.Models;
                 WriteLiteral("\r\n            </div>\r\n            <div>\r\n                No Account?");
                 EndContext();
                 BeginContext(1536, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b931da8462874cc5af261faa3af0d591", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6264b5505e5649689364bb76b5f6bad0", async() => {
                     BeginContext(1584, 8, true);
                     WriteLiteral("Sign Up!");
                     EndContext();

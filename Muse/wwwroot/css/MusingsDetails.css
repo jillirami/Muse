@@ -1,0 +1,42 @@
+﻿h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div {
+    padding: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: auto auto auto / auto auto;
+}
+
+.option {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.musing {
+    border: 1px solid black;
+}
+
+.links {
+     display: flex;
+     justify-content: center;
+}
+
+
+.namefor {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#date {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.displayfor {
+    margin-bottom: 5px;
+}

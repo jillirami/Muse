@@ -40,3 +40,5 @@ C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Users\F
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Users\Homepage.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Users\Privacy.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.csprojAssemblyReference.cache
+C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\Meaning.g.cshtml.cs
+C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\News.g.cshtml.cs

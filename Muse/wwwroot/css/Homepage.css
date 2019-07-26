@@ -10,8 +10,7 @@ header {
 #quote {
     grid-row: 2;
     text-align: center;
-    font-style: italic;
-    margin-bottom: 50px;
+    /*font-style: italic;*/
     padding-top: 15px;
 }
 
@@ -20,20 +19,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     width: 95%;
-    margin: auto;
     justify-content: center;
 }
 
 .div {
     border: 5px outset rgb(100, 100, 100);
-    text-align: center;
     padding: 10px;
     margin: 5px;
     width: 350px;
     min-height: 250px;
-}
-
-.subdiv {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    max-height: 300px;
 }

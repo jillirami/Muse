@@ -23,6 +23,8 @@ namespace Muse.Controllers
         // GET: Musings
         public async Task<IActionResult> Index()
         {
+            return View(await _context.Musing.ToListAsync());
+
             int? userId = HttpContext.Session.GetInt32("userId");
             if (userId.HasValue)
             {
@@ -70,11 +72,11 @@ namespace Muse.Controllers
                 int? userId = HttpContext.Session.GetInt32("userId");
                 if (userId.HasValue)
                 {
-                    musing.User.Id = userId.Value;
-
                     _context.Add(musing);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
+
+                    musing.User.Id = userId.Value;
                 }
             }
             return View(musing);
@@ -163,6 +165,16 @@ namespace Muse.Controllers
         private bool MusingExists(int id)
         {
             return _context.Musing.Any(e => e.Id == id);
+        }
+
+        public IActionResult Meaning()
+        {
+            return View();
+        }
+
+        public IActionResult News()
+        {
+            return View();
         }
     }
 }

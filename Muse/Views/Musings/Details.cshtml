@@ -4,39 +4,38 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/MusingsDetails.css" type="text/css" />
+}
 
-<div>
-    <h4>Musing</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-        <dd>
+<h2>Musing Details</h2>
+
+<div class="musing">
+    <section>
+        <p class="namefor">
+            @Html.DisplayNameFor(model => model.Title):  @Html.DisplayFor(model => model.Title)
+        </p>
+        <p class="namefor" id="date">
+            @Html.DisplayNameFor(model => model.Date):
+        </p>
+        <p class="displayfor">
             @Html.DisplayFor(model => model.Date)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.SUDS)
-        </dt>
-        <dd>
+        </p>
+        <p class="namefor">
+            @Html.DisplayNameFor(model => model.SUDS):
+        </p>
+        <p class="displayfor">
             @Html.DisplayFor(model => model.SUDS)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Entry)
-        </dt>
-        <dd>
+        </p>
+        <p class="namefor">
+            @Html.DisplayNameFor(model => model.Entry):
+        </p>
+        <p class="displayfor">
             @Html.DisplayFor(model => model.Entry)
-        </dd>
-    </dl>
+        </p>
+    </section>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="links">
+    <a class="option link" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a class="option link" asp-action="Index">Back to List</a>
 </div>

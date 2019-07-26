@@ -4,27 +4,47 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>My Musing Timeline</h2>
-<a class="link" asp-action="Create">Muse Now</a>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Timeline.css" type="text/css" />
+}
 
-<section class="table">
+<h2>- My Timeline -</h2>
+<div class="option">
+    <a class="link" asp-action="Create">Muse Now</a>
+</div>
+<div class="option">
+    <a class="link" asp-action="Home" asp-controller="Users">Return Home</a>
+</div>
+
+<div class="container">
     <div>
-        @foreach (var item in Model)
-        {
-        <p class="namefor">
-            @Html.DisplayNameFor(model => model.Title): @Html.DisplayFor(modelItem => item.Title)
-        </p>
-            <p class="namefor">
-                @Html.DisplayNameFor(model => model.Date): @Html.DisplayFor(modelItem => item.Date)
-            </p>
-            <p class="namefor">
-                @Html.DisplayNameFor(model => model.SUDS): @Html.DisplayFor(modelItem => item.SUDS)
-            </p>
-            <p>
-                <a class="link" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a class="link" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a class="link" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </p>
-        }
+        <ul class="timeline">
+            @foreach (var item in Model)
+            {
+               <li>
+                    <div class="timeline-badge">
+                        <img src="~/favicon_io/favicon.ico" alt="Click for More Information">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">@Html.DisplayFor(modelItem => item.Title)</h4>
+                            <p><small>@Html.DisplayFor(modelItem => item.Date)</small></p>
+                            <p>@Html.DisplayNameFor(model => model.SUDS): @Html.DisplayFor(modelItem => item.SUDS)</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>@Html.DisplayFor(modelItem => item.Entry)</p>
+                        </div>
+                        <div class="details">
+                            <a class="link" asp-action="Details" asp-route-id="@item.Id">- View Details -</a>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
     </div>
-</section>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="~/js/timeline.js"></script>
+}

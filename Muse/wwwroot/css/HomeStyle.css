@@ -1,12 +1,10 @@
 ﻿body {
     display: grid;
     grid-template: auto auto auto/ 1fr;
-    background-color: #F8F8F8;
 }
 
 header {
     grid-row: 1;
-    background-color: white;
 }
 
 h2 {
@@ -87,7 +85,6 @@ section {
     margin-bottom: 15px;
     width: 350px;
     height: 350px;
-    background-color: white;
 }
 
 .div:hover {

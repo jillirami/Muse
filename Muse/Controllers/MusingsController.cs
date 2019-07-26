@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Muse.Models;
+using System.Diagnostics;
 
 namespace Muse.Controllers
 {
@@ -21,7 +23,16 @@ namespace Muse.Controllers
         // GET: Musings
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Musing.ToListAsync());
+
+            int? userId = HttpContext.Session.GetInt32("userId");
+            if (userId.HasValue)
+            {
+                var musings = from m in _context.Musing
+                              select m;
+                musings = musings.Where(m => m.User.Id == userId.Value);
+                return View(musings);
+            }
+            return View(await _context.User.ToListAsync());
         }
 
         // GET: Musings/Details/5
@@ -57,9 +68,15 @@ namespace Muse.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(musing);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                int? userId = HttpContext.Session.GetInt32("userId");
+                if (userId.HasValue)
+                {
+                    musing.User.Id = userId.Value;
+
+                    _context.Add(musing);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
             return View(musing);
         }

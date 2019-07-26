@@ -22,8 +22,8 @@ namespace Muse.Controllers
 
         // GET: Users
         public async Task<IActionResult> Index()
-        {            
-           int ? userId = HttpContext.Session.GetInt32("userId");
+        {
+            int? userId = HttpContext.Session.GetInt32("userId");
             if (userId == 0 || userId == null)
             {
                 return View(await _context.User.ToListAsync());

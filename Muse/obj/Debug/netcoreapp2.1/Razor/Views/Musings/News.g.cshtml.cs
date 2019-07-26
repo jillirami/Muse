@@ -63,7 +63,7 @@ using Muse.Models;
             WriteLiteral("\r\n<h1>Muse about the News</h1>\r\n\r\n");
             EndContext();
             BeginContext(76, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "966fb655315d4cca8db4667e2a0eb316", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ac577faa2b494d78819c52aaa893325f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

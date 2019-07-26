@@ -9,8 +9,6 @@ const loadQuote = () => {
 
     let URL = "https://www.forbes.com/forbesapi/thought/get.json?limit=1&start=51&stream=true"
 
-    //let URL = "https://us1.locationiq.com/v1/search.php?key=4a4ef147541eb5&q=Mausoleum at Halicarnassus&format=json"
-
     // Actually load the wonders
     setTimeout(() => {
         axios.get(URL, {

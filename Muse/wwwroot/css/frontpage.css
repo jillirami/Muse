@@ -15,9 +15,9 @@
     color: black;
 }
 
-    .link:hover {
-        font-weight: bold;
-    }
+.link:hover {
+    font-weight: bold;
+}
 
 body {
     max-height: 100vh;

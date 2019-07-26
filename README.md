@@ -5,7 +5,7 @@
 
 <p>A lifestyle application to remove influences of external validation and promote personal reflection</p>
 
-<p>Front End: HTML, CSS, Javascript<br>
+<p><b>Front End</b>: HTML, CSS, Javascript<br>
 Back End: C#<br>
 Framework: ASP.NET MVC Core<br>
 Database: SQL<br>

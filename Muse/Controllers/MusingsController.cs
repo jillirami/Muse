@@ -23,7 +23,7 @@ namespace Muse.Controllers
         // GET: Musings
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Musing.ToListAsync());
+            return View(await _context.Musing.OrderByDescending(m => m.Date).ToListAsync());
 
             int? userId = HttpContext.Session.GetInt32("userId");
             if (userId.HasValue)

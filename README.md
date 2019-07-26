@@ -1,2 +1,2 @@
-# Muse [Muse Logo](https://github.com/jillirami/Muse/blob/master/MuseIcon.jpg "Muse Logo")
+# Muse [alt text](https://github.com/jillirami/Muse/blob/master/MuseIcon.jpg)
 (Ada Developers Academy) Capstone Project by: Jillianne Ramirez

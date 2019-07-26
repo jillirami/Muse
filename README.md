@@ -6,9 +6,9 @@
 <p>A lifestyle application to remove influences of external validation and promote personal reflection</p>
 
 <p><b>Front End</b>: HTML, CSS, Javascript<br>
-Back End: C#<br>
-Framework: ASP.NET MVC Core<br>
-Database: SQL<br>
+  <b>Back End</b>: C#<br>
+  <b>Framework</b>: ASP.NET MVC Core<br>
+  <b>Database</b>: SQL<br>
 Deployed on Azure<p>
   
 <p>Project Timeline: July 8th, 2019 - July 30th, 2019</p>

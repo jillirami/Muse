@@ -39,3 +39,4 @@ C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Users\C
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Users\Frontpage.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Users\Homepage.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Users\Privacy.g.cshtml.cs
+C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.csprojAssemblyReference.cache

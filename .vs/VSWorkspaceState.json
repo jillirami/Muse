@@ -8,7 +8,8 @@
     "\\Muse\\Views",
     "\\Muse\\Views\\Shared",
     "\\Muse\\Views\\Users",
-    "\\Muse\\wwwroot"
+    "\\Muse\\wwwroot",
+    "\\Muse\\wwwroot\\css"
   ],
   "SelectedNode": "\\Muse.sln",
   "PreviewInSolutionExplorer": false

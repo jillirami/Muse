@@ -23,7 +23,6 @@ namespace Muse.Controllers
         // GET: Musings
         public async Task<IActionResult> Index()
         {
-
             int? userId = HttpContext.Session.GetInt32("userId");
             if (userId.HasValue)
             {
@@ -32,7 +31,7 @@ namespace Muse.Controllers
                 musings = musings.Where(m => m.User.Id == userId.Value);
                 return View(musings);
             }
-            return View(await _context.User.ToListAsync());
+            return View(await _context.Musing.ToListAsync());
         }
 
         // GET: Musings/Details/5

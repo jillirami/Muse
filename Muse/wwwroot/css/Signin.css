@@ -1,0 +1,36 @@
+﻿header {
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+#signin {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px double rgb(231, 231, 231);
+    background-color: rgb(241, 241, 241);
+}
+
+#signin:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+}
+
+#signup {
+    padding-left: 3px;
+    font-style: italic;
+}

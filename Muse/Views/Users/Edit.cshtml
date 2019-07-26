@@ -1,0 +1,59 @@
+﻿@model Muse.Models.User
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/UsersEdit.css" type="text/css" />
+}
+
+<h2>Edit</h2>
+
+<div>
+    <section>
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <p>
+                <label asp-for="Name" class="control-label"></label>:
+            </p>
+            <p>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </p>
+            <p>
+                <label asp-for="Zip" class="control-label"></label>:
+            </p>
+            <p>
+                <input asp-for="Zip" class="form-control" />
+                <span asp-validation-for="Zip" class="text-danger"></span>
+            </p>
+            <p>
+                <label asp-for="Email" class="control-label"></label>:
+            </p>
+            <p>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </p>
+            <p>
+                <label asp-for="Password" class="control-label"></label>:
+            </p>
+            <p>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </p>
+
+            <input type="submit" value="Save" id="save"/>
+        </form>
+    </section>
+</div>
+<div>
+    <a class="option link" asp-action="Homepage">Return to Home</a> |
+    <a class="option link" asp-action="Details" asp-route-id="@Model.Id">Details</a> |
+    <a class="option link" asp-action="Signout">Log Out</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

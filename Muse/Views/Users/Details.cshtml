@@ -1,0 +1,29 @@
+﻿@model Muse.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/UsersDetails.css" type="text/css" />
+}
+
+@{ 
+    var password = Html.DisplayFor(model => model.Password);
+}
+
+<h2>Details</h2>
+
+<div>
+    <section>
+        <p><b>@Html.DisplayNameFor(model => model.Name)</b>: @Html.DisplayFor(model => model.Name)</p>
+        <p><b>@Html.DisplayNameFor(model => model.Zip)</b>: @Html.DisplayFor(model => model.Zip)</p>
+        <p><b>@Html.DisplayNameFor(model => model.Email)</b>: @Html.DisplayFor(model => model.Email)</p>
+        <p><b>@Html.DisplayNameFor(model => model.Password)</b>: @Html.HiddenFor(model => model.Password) ********</p>
+    </section>
+</div>
+<div>
+    <a class="option link" asp-action="Homepage">Return to Home</a> |
+    <a class="option link" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a class="option link" asp-action="Signout">Log Out</a>
+</div>

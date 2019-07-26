@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Muse",
+    "\\Muse\\Controllers",
+    "\\Muse\\Models",
+    "\\Muse\\Properties",
+    "\\Muse\\Views",
+    "\\Muse\\Views\\Shared",
+    "\\Muse\\Views\\Users",
+    "\\Muse\\wwwroot"
+  ],
+  "SelectedNode": "\\Muse.sln",
+  "PreviewInSolutionExplorer": false
+}

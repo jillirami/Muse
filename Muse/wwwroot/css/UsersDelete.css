@@ -1,0 +1,23 @@
+﻿div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#delete, #nodelete{
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px double rgb(231, 231, 231);
+    background-color: rgb(241, 241, 241);
+}
+
+#delete:hover, #nodelete:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+}
+
+#nodelete {
+    margin-top: 10px;
+    font-weight: bold;
+}

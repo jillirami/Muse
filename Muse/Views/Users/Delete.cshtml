@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="~/css/UsersDelete.css" type="text/css" />
 }
 
+<h2>Are you sure you want to delete your account?</h2>
+
 <div>
-    <h2>Are you sure you want to delete your account?</h2>
     <section>
         <form asp-action="Delete">
             <input type="hidden" asp-for="Id" />
+            <section>
+                <a><input type="submit" value="Delete" id="delete" /></a>
+            </section>
         </form>
     </section>
-</div>
-<div>
-    <a><input type="submit" value="Delete" id="delete"/></a>
 </div>
 <div>
     <a class="option link" id="nodelete" asp-action="Index">No! Take me back home.</a>

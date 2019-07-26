@@ -1,4 +1,9 @@
-﻿div {
+﻿h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div {
     display: flex;
     justify-content: center;
     padding: 5px;

@@ -3,5 +3,3 @@
 
 
 ![Muse Logo](MuseIcon.jpg)
-
-![Muse Logo](Muse/MuseIcon.jpg?raw=true "Icon")

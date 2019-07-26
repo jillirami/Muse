@@ -1,5 +1,8 @@
-# MUSE by: Jillianne Ramirez ![Muse Logo](MuseIcon.jpg width="200" height="400" )
+# MUSE by: Jillianne Ramirez ![Muse Logo](MuseIcon.jpg)
 #### Ada Developers Academy Capstone Project
 
+
+
+![Muse Logo](Muse/wwwroot/favicon_io/favicon-32x32.png)
 
 

@@ -1,30 +1,30 @@
 ﻿@model Muse.Models.User
 
 @{
-    ViewData["Title"] = "Homepage";
+    ViewData["Title"] = "Home";
 }
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/homepage.css" type="text/css" />
+   <link rel="stylesheet" href="~/css/Home.css" type="text/css" />
 }
 
-<h1 id="quote">@Html.DisplayFor(model => model.Name)</h1>
+<h1 id="greeting">Welcome @Html.DisplayFor(model => model.Name)</h1>
 
 <section>
     <div class="div">
-        <a class="link" asp-controller="Musings" asp-action="News">
+        <a class="link subdiv" asp-controller="Musings" asp-action="News">
             <h2>Muse about the News</h2>
             <img src="~/images/news.jpg" alt="Newspaper Outline">
         </a>
     </div>
     <div class="div">
-        <a class="link" asp-controller="Musings" asp-action="Index">
+        <a class="link subdiv" asp-controller="Musings" asp-action="Index">
             <h2>- My Timeline -</h2>
                 <img src="~/images/timeline.jpg" alt="Timeline Outline">
         </a>
     </div>
     <div class="div">
-        <a class="link" asp-controller="Musings" asp-action="Meaning">
+        <a class="link subdiv" asp-controller="Musings" asp-action="Meaning">
             <h2>Muse about Meaning</h2>
             <img src="~/images/question.jpg" alt="Question Mark">
         </a>

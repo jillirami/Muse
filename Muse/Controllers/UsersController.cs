@@ -28,7 +28,7 @@ namespace Muse.Controllers
             {
                 return View(await _context.User.ToListAsync());
             }
-            return RedirectToAction("Homepage");
+            return RedirectToAction("Home");
         }
 
         public IActionResult Signout()
@@ -49,7 +49,7 @@ namespace Muse.Controllers
                 if (user.Password.Equals(searchPassword))
                 {
                     HttpContext.Session.SetInt32("userId", user.Id);                    
-                    return RedirectToAction("Homepage");
+                    return RedirectToAction("Home");
                 }
                 TempData["Error"] = "Password incorrect";
                 return RedirectToAction("Index");
@@ -68,14 +68,14 @@ namespace Muse.Controllers
 
             if (!userId.HasValue)
             {
-                return RedirectToAction("Homepage");
+                return RedirectToAction("Home");
             }
 
             var user = await _context.User
                 .FirstOrDefaultAsync(m => m.Id == userId);
             if (user == null)
             {
-                return RedirectToAction("Homepage");
+                return RedirectToAction("Home");
             }
 
             return View(user);
@@ -198,7 +198,7 @@ namespace Muse.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Homepage()
+        public async Task<IActionResult> Home()
         {
             int? userId = HttpContext.Session.GetInt32("userId");
 

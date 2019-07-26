@@ -1,4 +1,4 @@
 # Muse 
 
-[alt text](https://github.com/jillirami/Muse/blob/master/MuseIcon.jpg)
+[alt text](~/MuseIcon.jpg)
 (Ada Developers Academy) Capstone Project by: Jillianne Ramirez

@@ -23,17 +23,17 @@ namespace Muse.Controllers
         // GET: Musings
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Musing.OrderByDescending(m => m.Date).ToListAsync());
+            //return View(await _context.Musing.OrderByDescending(m => m.Date).ToListAsync());
 
             int? userId = HttpContext.Session.GetInt32("userId");
             if (userId.HasValue)
             {
-                var musings = from m in _context.Musing
+                var musings = from m in _context.Musing.OrderByDescending(m => m.Date)
                               select m;
                 musings = musings.Where(m => m.User.Id == userId.Value);
                 return View(musings);
             }
-            return View(await _context.Musing.ToListAsync());
+            return View(await _context.Musing.OrderByDescending(m => m.Date).ToListAsync());
         }
 
         // GET: Musings/Details/5
@@ -72,11 +72,14 @@ namespace Muse.Controllers
                 int? userId = HttpContext.Session.GetInt32("userId");
                 if (userId.HasValue)
                 {
+                     musing.User.Id = userId.Value;
                     _context.Add(musing);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
-
-                    musing.User.Id = userId.Value;
+                    // The error returned:
+                    // An unhandled exception occurred while processing the request.
+                    // NullReferenceException: Object reference not set to an instance of an object.
+                    // Muse.Controllers.MusingsController.Create(Musing musing) in MusingsController.cs, line 75
                 }
             }
             return View(musing);

@@ -67,7 +67,7 @@ using Muse.Models;
             WriteLiteral("\r\n<h2>My Musing Timeline</h2>\r\n");
             EndContext();
             BeginContext(114, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39b6598e0e9748fc9b2546aac4828045", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "667cb09c7115402ea4357639e474af88", async() => {
                 BeginContext(150, 8, true);
                 WriteLiteral("Muse Now");
                 EndContext();
@@ -159,7 +159,7 @@ using Muse.Models;
             WriteLiteral("\r\n            </p>\r\n            <p>\r\n                ");
             EndContext();
             BeginContext(730, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6ec0840ee534368a12dd2ff32a2dfd0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16a8dd7f9fae4c308803344d028171d7", async() => {
                 BeginContext(788, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -195,7 +195,7 @@ using Muse.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(816, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "235a12bfdcd8400981d4870c6b576553", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4a5694ebce146cbb118616c02003a1c", async() => {
                 BeginContext(877, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -231,7 +231,7 @@ using Muse.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(908, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0cf761cbd91c42fe8b77bb74bfec0e8a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "953036f1b87b498db20e01b2e7b44dd2", async() => {
                 BeginContext(968, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

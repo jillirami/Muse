@@ -72,14 +72,13 @@ namespace Muse.Controllers
                 int? userId = HttpContext.Session.GetInt32("userId");
                 if (userId.HasValue)
                 {
-                     musing.User.Id = userId.Value;
+                    var user = await _context.User
+                        .FirstOrDefaultAsync(m => m.Id == userId);
+
+                    musing.User = user;
                     _context.Add(musing);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
-                    // The error returned:
-                    // An unhandled exception occurred while processing the request.
-                    // NullReferenceException: Object reference not set to an instance of an object.
-                    // Muse.Controllers.MusingsController.Create(Musing musing) in MusingsController.cs, line 75
                 }
             }
             return View(musing);

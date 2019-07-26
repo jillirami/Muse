@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Muse",
+    "\\Muse\\Controllers",
     "\\Muse\\Views",
-    "\\Muse\\Views\\Musings",
     "\\Muse\\Views\\Users",
     "\\Muse\\wwwroot",
     "\\Muse\\wwwroot\\css",

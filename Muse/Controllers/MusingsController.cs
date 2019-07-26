@@ -21,19 +21,19 @@ namespace Muse.Controllers
         }
 
         // GET: Musings
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            //return View(await _context.Musing.OrderByDescending(m => m.Date).ToListAsync());
-
             int? userId = HttpContext.Session.GetInt32("userId");
             if (userId.HasValue)
             {
-                var musings = from m in _context.Musing.OrderByDescending(m => m.Date)
+                var musings = from m in _context.Musing
+                              where m.User.Id == userId
+                              orderby m.Date descending
                               select m;
-                musings = musings.Where(m => m.User.Id == userId.Value);
+
                 return View(musings);
             }
-            return View(await _context.Musing.OrderByDescending(m => m.Date).ToListAsync());
+            return RedirectToAction("Frontpage", "Users");
         }
 
         // GET: Musings/Details/5
@@ -41,14 +41,16 @@ namespace Muse.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                TempData["Error"] = "Unable to Find Musing";
+                return RedirectToAction("Index");
             }
 
             var musing = await _context.Musing
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (musing == null)
             {
-                return NotFound();
+                TempData["Error"] = "Unable to Find Musing";
+                return RedirectToAction("Index");
             }
 
             return View(musing);
@@ -80,6 +82,8 @@ namespace Muse.Controllers
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
+                TempData["Error"] = "Sign In Expired";
+                return RedirectToAction("Index");
             }
             return View(musing);
         }
@@ -89,13 +93,15 @@ namespace Muse.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                TempData["Error"] = "Unable to Find Musing";
+                return RedirectToAction("Index");
             }
 
             var musing = await _context.Musing.FindAsync(id);
             if (musing == null)
             {
-                return NotFound();
+                TempData["Error"] = "Unable to Find Musing";
+                return RedirectToAction("Index");
             }
             return View(musing);
         }
@@ -109,7 +115,8 @@ namespace Muse.Controllers
         {
             if (id != musing.Id)
             {
-                return NotFound();
+                TempData["Error"] = "Unable to Find Musing";
+                return RedirectToAction("Index");
             }
 
             if (ModelState.IsValid)
@@ -123,7 +130,8 @@ namespace Muse.Controllers
                 {
                     if (!MusingExists(musing.Id))
                     {
-                        return NotFound();
+                        TempData["Error"] = "Unable to Find Musing";
+                        return RedirectToAction("Index");
                     }
                     else
                     {
@@ -140,14 +148,16 @@ namespace Muse.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                TempData["Error"] = "Unable to Find Musing";
+                return RedirectToAction("Index");
             }
 
             var musing = await _context.Musing
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (musing == null)
             {
-                return NotFound();
+                TempData["Error"] = "Unable to Find Musing";
+                return RedirectToAction("Index");
             }
 
             return View(musing);

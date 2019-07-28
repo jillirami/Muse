@@ -3,7 +3,7 @@
 
 <hr />
 
-<p>A lifestyle application to remove influences of external validation and promote personal reflection</p>
+<p>A lifestyle application aimed at removing influences of external validation and promoting personal reflection</p>
 
 <p><b>Front End</b>: HTML, CSS, Javascript<br>
   <b>Back End</b>: C#<br>

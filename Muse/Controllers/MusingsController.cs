@@ -188,5 +188,10 @@ namespace Muse.Controllers
         {
             return View();
         }
+
+        public IActionResult Help()
+        {
+            return View();
+        }
     }
 }

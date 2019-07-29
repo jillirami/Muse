@@ -3,29 +3,34 @@
 
 // Write your JavaScript code.
 
+let i = 0;
 
 const loadNews = () => {
     // reportStatus('Loading...');
 
-    let URL = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key="
+    let URL = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=yyIGJLQZ1v3jqGt29zh1JIb1vlOcI590"
 
-    // Actually load the wonders
     setTimeout(() => {
         axios.get(URL)
             .then((response) => {
                 // reportStatus(`success`);
-                $('#news').empty().append(response);
-                console.log(response)
+                $('#newsresponse').empty().append(response.data.results[i].abstract);
+                console.log(response.data.results[0]);
+                if (i < response.data.results.length) {
+                    i++;
+                } else {
+                    i = 0;
+                };
             })
             .catch((error) => {
                 // reportStatus(`failure: ${error.message}`);
-                $('#news').empty().append('shoot!')
+                $('#newsresponse').empty().append('shoot!');
                 console.log(error);
-                console.log("nope")
+                console.log("nope");
             })
     })
 }
 
 $(document).ready(() => {
-    loadNews();
-})
+    $("#news").click(loadNews);
+});

@@ -49,15 +49,13 @@
                 <textarea asp-for="Entry" class="form-control" type="text"></textarea>
                 <span asp-validation-for="Entry" class="text-danger"></span>
             </p>
-            @*
-                <p>
-                    <label asp-for="Aspirations" class="control-label"></label>:
-                </p>
-                <p>
-                    <textarea asp-for="Entry" class="form-control" type="text"></textarea>
-                    <span asp-validation-for="Entry" class="text-danger"></span>
-                </p>
-            *@
+            <p>
+                <label asp-for="Aspirations" class="control-label"></label>:
+            </p>
+            <p>
+                <input asp-for="Aspirations" class="form-control" placeholder="My aspirations are ..." />
+                <span asp-validation-for="Aspirations" class="text-danger"></span>
+            </p>
             <input type="submit" value="Submit Entry" id="entry" />
         </form>
     </section>

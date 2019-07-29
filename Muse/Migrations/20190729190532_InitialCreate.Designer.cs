@@ -10,7 +10,7 @@ using Muse.Models;
 namespace Muse.Migrations
 {
     [DbContext(typeof(MuseContext))]
-    [Migration("20190726015028_InitialCreate")]
+    [Migration("20190729190532_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,7 +23,7 @@ namespace Muse.Migrations
 
             modelBuilder.Entity("Muse.Models.Musing", b =>
                 {
-                    b.Property<int>("UserID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -34,8 +34,6 @@ namespace Muse.Migrations
                     b.Property<string>("Entry")
                         .IsRequired();
 
-                    b.Property<int>("Id");
-
                     b.Property<int>("SUDS");
 
                     b.Property<string>("Title")
@@ -43,7 +41,7 @@ namespace Muse.Migrations
 
                     b.Property<int?>("UserId");
 
-                    b.HasKey("UserID");
+                    b.HasKey("Id");
 
                     b.HasIndex("UserId");
 

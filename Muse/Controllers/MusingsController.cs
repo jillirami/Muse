@@ -67,7 +67,7 @@ namespace Muse.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Date,SUDS,Entry")] Musing musing)
+        public async Task<IActionResult> Create([Bind("Id,Title,Date,SUDS,Entry,Aspirations")] Musing musing)
         {
             if (ModelState.IsValid)
             {
@@ -111,7 +111,7 @@ namespace Muse.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Date,SUDS,Entry")] Musing musing)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Date,SUDS,Entry,Aspirations")] Musing musing)
         {
             if (id != musing.Id)
             {

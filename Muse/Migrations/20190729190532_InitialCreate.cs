@@ -28,19 +28,18 @@ namespace Muse.Migrations
                 name: "Musing",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Title = table.Column<string>(nullable: false),
                     Date = table.Column<DateTime>(nullable: false),
                     SUDS = table.Column<int>(nullable: false),
                     Entry = table.Column<string>(nullable: false),
                     Aspirations = table.Column<string>(nullable: true),
-                    UserID = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     UserId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Musing", x => x.UserID);
+                    table.PrimaryKey("PK_Musing", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Musing_User_UserId",
                         column: x => x.UserId,

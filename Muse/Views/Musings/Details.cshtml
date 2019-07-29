@@ -5,7 +5,7 @@
 }
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/MusingsDetail.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/MusingDetail.css" type="text/css" />
 }
 
 <h2>Musing Details</h2>
@@ -20,15 +20,20 @@
                 @Html.DisplayFor(model => model.Date)
             </a>
         </p>
-        <p class="namefor" id="suds">
+        <p class="displayfor" id="suds">
             @Html.DisplayNameFor(model => model.SUDS): @Html.DisplayFor(model => model.SUDS)
         </p>
-        <p class="displayfor">
-            @Html.DisplayFor(model => model.Entry)
-        </p>
+        <section id="timeline-body">
+            <p class="displayfor" id="entry">
+                @Html.DisplayNameFor(model => model.Entry): @Html.DisplayFor(model => model.Entry)
+            </p>
+            <p class="display" id="aspirations">
+                @Html.DisplayNameFor(model => model.Aspirations): @Html.DisplayFor(model => model.Aspirations)
+            </p>
+        </section>
     </section>
 </div>
-<div class="links">
+<div id="links">
     <a class="option link" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a class="option link" asp-action="Index">Back to List</a> |
     <a class="option link" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>

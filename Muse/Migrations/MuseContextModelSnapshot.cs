@@ -25,6 +25,8 @@ namespace Muse.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Aspirations");
+
                     b.Property<DateTime>("Date");
 
                     b.Property<string>("Entry")

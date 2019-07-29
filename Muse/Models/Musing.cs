@@ -21,7 +21,7 @@ namespace Muse.Models
         [Required(ErrorMessage = "This field is required")]
         public string Entry { get; set; }
 
-        //public string Aspirations { get; set; }
+        public string Aspirations { get; set; }
 
         public virtual User User { get; set; }
     }

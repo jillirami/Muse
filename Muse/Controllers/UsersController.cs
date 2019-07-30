@@ -53,12 +53,10 @@ namespace Muse.Controllers
                 }
                 TempData["Error"] = "Password incorrect";
                 return RedirectToAction("Index");
-                //    return Content($"the value of user is: {user.Email} and usersssss {users}");
             }
 
             TempData["Error"] = "Email not found or matched";
             return RedirectToAction("Create");
-           // return Content("nope");
         }
 
         // GET: Users/Details/5

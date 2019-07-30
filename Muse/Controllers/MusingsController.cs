@@ -196,12 +196,12 @@ namespace Muse.Controllers
             WebClient client = new WebClient();
             Random rnd = new Random();
 
-            var downloadString = client.DownloadString($"https://www.forbes.com/forbesapi/thought/get.json?limit=1&start={rnd.Next(1000)}&stream=true");
-           // var result = JsonConvert.SerializeObject(downloadString);
+            var downloadString = client.DownloadString($"https://www.forbes.com/forbesapi/thought/get.json?limit=1&start={rnd.Next(5000)}&stream=true");
+            // var result = JsonConvert.SerializeObject(downloadString);
 
-
-            var jObject = JObject.Parse(downloadString);
-            string displayQuote = (string)jObject.SelectToken("quote");
+            JObject json = JObject.Parse(downloadString);
+            //var jObject = JObject.Parse(downloadString);
+            // string displayQuote = (string)jObject.SelectToken("quote");
             return Content(downloadString);
             
             return View();

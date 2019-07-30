@@ -80,6 +80,8 @@ namespace Muse.Controllers
 
                     musing.User = user;
 
+                    // credits to https://github.com/cjhutto/vaderSentiment for this awesome sentiment analyzer
+
                     SentimentIntensityAnalyzer analyzer = new SentimentIntensityAnalyzer();
                     musing.Sentiment = analyzer.PolarityScores(musing.Entry).Compound;
 

@@ -2,7 +2,6 @@
   "ExpandedNodes": [
     "",
     "\\Muse",
-    "\\Muse\\Controllers",
     "\\Muse\\Models",
     "\\Muse\\Views",
     "\\Muse\\Views\\Users",
@@ -12,6 +11,6 @@
     "\\Muse\\wwwroot\\lib\\bootstrap",
     "\\Muse\\wwwroot\\lib\\jquery-validation-unobtrusive"
   ],
-  "SelectedNode": "\\Muse.sln",
+  "SelectedNode": "\\Muse\\wwwroot\\css\\Home.css",
   "PreviewInSolutionExplorer": false
 }

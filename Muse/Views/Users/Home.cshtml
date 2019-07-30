@@ -5,7 +5,7 @@
 }
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/HomeStyle.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/Home.css" type="text/css" />
 }
 
 <h1 id="greeting">@Html.DisplayFor(model => model.Name)'s</h1>
@@ -14,7 +14,8 @@
     <div class="div">
         <a class="link subdiv" asp-controller="Musings" asp-action="Musing">
             <h2>Muse Now</h2>
-            <img src="~/images/icon.jpg" alt="Newspaper Outline">
+            <img src="~/images/icon.jpg" alt="Website Icon">
+            <p class="subheading"><small>Write about news, famous quotes, and beyond.</small></p>
         </a>
     </div>
     <div class="div">
@@ -26,7 +27,8 @@
     <div class="div">
         <a class="link subdiv" asp-controller="Musings" asp-action="Metrics">
             <h2>Over Time</h2>
-            <img src="~/images/changes.jpg" alt="Question Mark">
+            <img src="~/images/changes.jpg" alt="Smiley face slash frowny face">
+            <p class="subheading"><small>Understand how your sentiments changed.</small></p>
         </a>
     </div>
 </section>

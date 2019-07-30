@@ -1,6 +1,52 @@
-﻿h2, .link, #quote, #news {
+﻿body {
+    display: grid;
+    grid-template: auto auto/ 0.5fr 1fr;
+}
+
+header {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+#prompts {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#createform {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+h2, .link, #quote, #news, #quoteresponse, #newsresponse {
     text-align: center;
     padding-bottom: 10px;
+}
+
+#quote, #news {
+    width: 60%;
+    margin: auto;
+}
+
+#quote, #news {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px double rgb(231, 231, 231);
+    background-color: rgb(241, 241, 241);
+}
+
+#quote:hover, #news:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+}
+
+
+#quoteresponse, #newsresponse {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 div {

@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="~/css/Entry.css" type="text/css" />
 }
 
-<h2>Muse</h2>
+<section id="prompts">
+    <h2>Muse</h2>
 
-<p class="link" id="quote">... about the Quote of the Day</p>
-<section id="quoteresponse"></section>
+    <p class="link" id="quote">About a Famous Quote</p>
+    <section id="quoteresponse"></section>
 
-<p class="link" id="news">... about the Top NYTimes News</p>
-<section id="newsresponse"></section>
+    <p class="link" id="news">About the Top NYTimes News</p>
+    <section id="newsresponse"></section>
+</section>
 
-<partial name="../Musings/Create" />
+<section id="createform">
+    <partial name="../Musings/Create" />
+</section>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>

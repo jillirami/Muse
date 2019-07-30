@@ -91,3 +91,8 @@ section {
     border: 4px inset rgb(100, 100, 100);
     font-size: 1.1em;
 }
+
+.subheading {
+    display: flex;
+    justify-content: center;
+}

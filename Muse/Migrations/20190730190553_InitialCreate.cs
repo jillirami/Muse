@@ -35,6 +35,7 @@ namespace Muse.Migrations
                     SUDS = table.Column<int>(nullable: false),
                     Entry = table.Column<string>(nullable: false),
                     Aspirations = table.Column<string>(nullable: true),
+                    Sentiment = table.Column<double>(nullable: false),
                     UserId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>

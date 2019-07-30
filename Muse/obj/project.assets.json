@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "CodingUpAStorm.VaderSharp/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/VaderSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/VaderSharp.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4619,6 +4631,21 @@
     }
   },
   "libraries": {
+    "CodingUpAStorm.VaderSharp/1.0.4": {
+      "sha512": "CzqATEidMnjrQ5WTyJPXQ99WV0W2d8QbsAWJ58GaNbUAisPdO/6qXqlqArueYuAJqkl1sdUx+vL37Ix8epbIAg==",
+      "type": "package",
+      "path": "codingupastorm.vadersharp/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "codingupastorm.vadersharp.1.0.4.nupkg.sha512",
+        "codingupastorm.vadersharp.nuspec",
+        "lib/net35/VaderSharp.dll",
+        "lib/net35/VaderSharp.xml",
+        "lib/netstandard1.3/VaderSharp.dll",
+        "lib/netstandard1.3/VaderSharp.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -12528,6 +12555,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CodingUpAStorm.VaderSharp >= 1.0.4",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12575,6 +12603,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "CodingUpAStorm.VaderSharp": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

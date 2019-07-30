@@ -41,4 +41,3 @@ C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.Views.pdb
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.dll
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.pdb
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.csproj.CopyComplete
-C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.csprojAssemblyReference.cache

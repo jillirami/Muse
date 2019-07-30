@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Muse.Models;
 using System.Diagnostics;
+using VaderSharp;
 
 namespace Muse.Controllers
 {
@@ -78,6 +79,10 @@ namespace Muse.Controllers
                         .FirstOrDefaultAsync(m => m.Id == userId);
 
                     musing.User = user;
+
+                    SentimentIntensityAnalyzer analyzer = new SentimentIntensityAnalyzer();
+                    musing.Sentiment = analyzer.PolarityScores(musing.Entry).Compound;
+
                     _context.Add(musing);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));

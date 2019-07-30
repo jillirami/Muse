@@ -10,7 +10,7 @@ using Muse.Models;
 namespace Muse.Migrations
 {
     [DbContext(typeof(MuseContext))]
-    [Migration("20190729190532_InitialCreate")]
+    [Migration("20190730190553_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,8 @@ namespace Muse.Migrations
                         .IsRequired();
 
                     b.Property<int>("SUDS");
+
+                    b.Property<double>("Sentiment");
 
                     b.Property<string>("Title")
                         .IsRequired();

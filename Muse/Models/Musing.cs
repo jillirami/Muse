@@ -23,6 +23,8 @@ namespace Muse.Models
 
         public string Aspirations { get; set; }
 
+        public double Sentiment { get; set; }
+
         public virtual User User { get; set; }
     }
 }

@@ -34,6 +34,8 @@ namespace Muse.Migrations
 
                     b.Property<int>("SUDS");
 
+                    b.Property<double>("Sentiment");
+
                     b.Property<string>("Title")
                         .IsRequired();
 

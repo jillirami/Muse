@@ -78,7 +78,7 @@ using Muse.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(96, 65, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "41d8d313976242359843569043c878eb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a7bb9db1950845e8bb48fdd61585f9a3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -103,12 +103,12 @@ using Muse.Models;
             WriteLiteral("\r\n<h2>Are you sure you want to delete your account?</h2>\r\n\r\n<div>\r\n    <section>\r\n        ");
             EndContext();
             BeginContext(256, 215, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e6a859609994a8c884f165445b46af5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f78fae9928f4c41ac87468289e4a55c", async() => {
                 BeginContext(282, 14, true);
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(296, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "178fd1f8033845bcab2dd81170d973e5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5f0f2eb3414849a484bef0eab11a95c3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -152,7 +152,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
             WriteLiteral("\r\n    </section>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(508, 82, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "355029b231124cb6994d6ff8e91a780e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "423bcb7f60594aa3892fffd81df18bdf", async() => {
                 BeginContext(564, 22, true);
                 WriteLiteral("No! Take me back home.");
                 EndContext();

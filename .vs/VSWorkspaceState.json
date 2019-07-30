@@ -11,6 +11,6 @@
     "\\Muse\\wwwroot\\lib\\bootstrap",
     "\\Muse\\wwwroot\\lib\\jquery-validation-unobtrusive"
   ],
-  "SelectedNode": "\\Muse.sln",
+  "SelectedNode": "\\Muse\\Views\\Musings\\News.cshtml",
   "PreviewInSolutionExplorer": false
 }

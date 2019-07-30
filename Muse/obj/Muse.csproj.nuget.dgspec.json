@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "CodingUpAStorm.VaderSharp": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

@@ -38,10 +38,14 @@
             </p>
             <p><label asp-for="Entry" class="control-label"></label></p>
             <p>
-                <input asp-for="Entry" class="form-control" />
+                <textarea asp-for="Entry" class="form-control"></textarea>
                 <span asp-validation-for="Entry" class="text-danger"></span>
             </p>
-
+            <p><label asp-for="Aspirations" class="control-label"></label></p>
+            <p>
+                <input asp-for="Aspirations" class="form-control" />
+                <span asp-validation-for="Aspirations" class="text-danger"></span>
+            </p>
             <input type="submit" value="Save" id="save" />
         </form>
     </section>

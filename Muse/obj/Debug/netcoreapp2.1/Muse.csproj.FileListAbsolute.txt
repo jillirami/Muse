@@ -18,8 +18,8 @@ C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\Details.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\Edit.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\Index.g.cshtml.cs
-C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\Meaning.g.cshtml.cs
-C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\News.g.cshtml.cs
+C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\Metrics.g.cshtml.cs
+C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Musings\Musing.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -41,3 +41,4 @@ C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.Views.pdb
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.dll
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.pdb
 C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.csproj.CopyComplete
+C:\Users\Jillianne\Desktop\Muse\Muse\obj\Debug\netcoreapp2.1\Muse.csprojAssemblyReference.cache

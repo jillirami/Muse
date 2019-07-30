@@ -179,14 +179,24 @@ namespace Muse.Controllers
             return _context.Musing.Any(e => e.Id == id);
         }
 
-        public IActionResult Meaning()
+        public IActionResult Musing()
         {
             return View();
         }
 
-        public IActionResult News()
+        public IActionResult Metrics()
         {
-            return View();
+            int? userId = HttpContext.Session.GetInt32("userId");
+            if (userId.HasValue)
+            {
+                var musings = from m in _context.Musing
+                              where m.User.Id == userId
+                              orderby m.Date descending
+                              select m;
+
+                return View(musings);
+            }
+            return RedirectToAction("Frontpage", "Users");
         }
 
         public IActionResult Help()

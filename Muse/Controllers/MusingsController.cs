@@ -1,5 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using OpenScraping;
+using OpenScraping.Config;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -188,6 +193,17 @@ namespace Muse.Controllers
 
         public IActionResult Musing()
         {
+            WebClient client = new WebClient();
+            Random rnd = new Random();
+
+            var downloadString = client.DownloadString($"https://www.forbes.com/forbesapi/thought/get.json?limit=1&start={rnd.Next(1000)}&stream=true");
+           // var result = JsonConvert.SerializeObject(downloadString);
+
+
+            var jObject = JObject.Parse(downloadString);
+            string displayQuote = (string)jObject.SelectToken("quote");
+            return Content(downloadString);
+            
             return View();
         }
 

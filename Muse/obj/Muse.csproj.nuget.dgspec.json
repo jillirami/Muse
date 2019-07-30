@@ -64,6 +64,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.1.9, )"
+            },
+            "OpenScraping": {
+              "target": "Package",
+              "version": "[1.4.2, )"
             }
           },
           "imports": [

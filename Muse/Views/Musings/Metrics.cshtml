@@ -14,7 +14,7 @@
         <thead>
             <tr>
                 <th>Date</th>
-                <th>Entry</th>
+                <th>Entry Title</th>
                 <th>SUDS</th>
                 <th>Sentiment Score</th>
             </tr>
@@ -22,12 +22,12 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Date</a></td>
-                    <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></td>
-                    <td>@item.SUDS</td>
-                    <td style="border: 3px solid @item.getSentimentColor">@item.Sentiment</td>
-                </tr>
+            <tr>
+                <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Date</a></td>
+                <td style="border: 3px solid @item.getSentimentColor"><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></td>
+                <td style="border: 3px solid @item.getSentimentColor"><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Sentiment</a></td>
+                <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.SUDS</a></td>
+            </tr>
             }
         </tbody>
     </table>

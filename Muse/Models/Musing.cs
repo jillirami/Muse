@@ -26,5 +26,25 @@ namespace Muse.Models
         public double Sentiment { get; set; }
 
         public virtual User User { get; set; }
+
+        public string getSentimentColor
+        {
+            get
+            {
+                string color = "#fc0303";
+                if (this.Sentiment >= 0.05)
+                {
+                    // Positive
+                    color = "#032cfc";
+                }
+                else if (this.Sentiment > -0.05 && this.Sentiment < 0.05)
+                {
+                    // Neutral
+                    color = "#d9d9d9";
+                }
+
+                return color;
+            }
+        }
     }
 }

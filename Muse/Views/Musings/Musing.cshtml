@@ -9,13 +9,11 @@
 <section id="prompts">
     <h2>Muse</h2>
 
-    <p class="link" id="quote">About a Famous Quote</p>
-    <p id="quoteresponse"></p>
+    <p class="link" id="quote">... about a Famous Quote</p>
+    <p id="quoteresponse">@ViewBag.quote - @ViewBag.quoteAuthor</p>
 
-    <p class="link" id="news">About the Top NYTimes News</p>
+    <p class="link" id="news">... about the Top NYTimes News</p>
     <p id="newsresponse"></p>
-
-
 </section>
 
 <section id="createform">
@@ -25,5 +23,5 @@
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="text/javascript" src="~/js/news.js"></script>
+    <script type="text/javascript" src="~/js/musings.js"></script>
 }

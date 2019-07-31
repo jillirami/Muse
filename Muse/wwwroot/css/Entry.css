@@ -24,15 +24,13 @@ h2, .link, #quote, #news, #quoteresponse, #newsresponse {
 }
 
 #quote, #news {
-    width: 60%;
-    margin: auto;
-}
-
-#quote, #news {
     border-radius: 5px;
     padding: 3px;
     border: 1px double rgb(231, 231, 231);
     background-color: rgb(241, 241, 241);
+    width: 60%;
+    margin: auto;
+    margin-top: 5px;
 }
 
 #quote:hover, #news:hover {
@@ -70,4 +68,8 @@ div {
     border: 1px double rgb(241, 241, 241);
     background-color: rgb(231, 231, 231);
     font-weight: bold;
+}
+
+#quoteresponse {
+    display: none;
 }

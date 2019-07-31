@@ -30,6 +30,7 @@ namespace Muse.Controllers
         public IActionResult Index()
         {
             int? userId = HttpContext.Session.GetInt32("userId");
+
             if (userId.HasValue)
             {
                 var musings = from m in _context.Musing
@@ -39,7 +40,8 @@ namespace Muse.Controllers
 
                 return View(musings);
             }
-            return RedirectToAction("Frontpage", "Users");
+
+            return RedirectToAction("Frontpage", "Users");            
         }
 
         // GET: Musings/Details/5
@@ -191,19 +193,20 @@ namespace Muse.Controllers
             return _context.Musing.Any(e => e.Id == id);
         }
 
+
+
         public IActionResult Musing()
         {
+
             WebClient client = new WebClient();
             Random rnd = new Random();
 
             var downloadString = client.DownloadString($"https://www.forbes.com/forbesapi/thought/get.json?limit=1&start={rnd.Next(5000)}&stream=true");
-            // var result = JsonConvert.SerializeObject(downloadString);
+            var thoughts = JObject.Parse(downloadString).ToObject<ForbesThoughts>().thoughtStream.thoughts;
 
-            JObject json = JObject.Parse(downloadString);
-            //var jObject = JObject.Parse(downloadString);
-            // string displayQuote = (string)jObject.SelectToken("quote");
-            return Content(downloadString);
-            
+            ViewBag.quote = thoughts[0].quote;
+            ViewBag.quoteAuthor = thoughts[0].thoughtAuthor.name;
+
             return View();
         }
 

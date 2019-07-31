@@ -26,7 +26,7 @@
                     <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Date</a></td>
                     <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></td>
                     <td>@item.SUDS</td>
-                    <td style="border: 5px solid @item.getSentimentColor">@item.Sentiment</td>
+                    <td style="border: 3px solid @item.getSentimentColor">@item.Sentiment</td>
                 </tr>
             }
         </tbody>
@@ -45,9 +45,9 @@
 
     <p>Entries are classified as either positive, neutral, or negative.</p>
 
-    <p>- positive sentiment: score >= 0.05</p>
-    <p>- neutral sentiment: ( score > -0.05) and (score < 0.05)</p>
-    <p>- negative sentiment: score <= -0.05</p>
+    <p>- <a style="color: rgb(0, 0, 255, 0.5)">positive sentiment:</a> score >= 0.05</p>
+    <p>- <a style="color: rgb(255, 0, 0, 0.5)">neutral sentiment:</a> ( score > -0.05) and (score < 0.05)</p>
+    <p>- <a style="color: #a9a9a9">negative sentiment:</a> score <= -0.05</p>
 </section>
 
 

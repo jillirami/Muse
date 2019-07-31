@@ -112,6 +112,7 @@ namespace Muse.Controllers
             }
 
             var musing = await _context.Musing.FindAsync(id);
+
             if (musing == null)
             {
                 TempData["Error"] = "Unable to Find Musing";
@@ -137,6 +138,8 @@ namespace Muse.Controllers
             {
                 try
                 {
+                    SentimentIntensityAnalyzer analyzer = new SentimentIntensityAnalyzer();
+                    musing.Sentiment = analyzer.PolarityScores(musing.Entry).Compound;
                     _context.Update(musing);
                     await _context.SaveChangesAsync();
                 }

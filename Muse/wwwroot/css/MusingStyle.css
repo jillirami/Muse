@@ -18,25 +18,22 @@ header {
     grid-row: 2;
 }
 
-h2, .link, #quote, #news, #quoteresponse, #newsresponse {
+h2, #quote, #news, #quoteresponse, #newsresponse, #addquote, #addnews {
     text-align: center;
     padding-bottom: 10px;
 }
 
-#quote, #news {
+#quote, #news, #addquote, #addnews {
     border-radius: 5px;
     padding: 3px;
     border: 1px double rgb(231, 231, 231);
     background-color: rgb(241, 241, 241);
     width: 60%;
     margin: auto;
-}
-
-#quote, #news {
     margin-top: 15px;
 }
 
-#quote:hover, #news:hover {
+#quote:hover, #news:hover, #addquote:hover, #addnews:hover {
     border: 1px double rgb(241, 241, 241);
     background-color: rgb(231, 231, 231);
     font-weight: bold;
@@ -73,6 +70,6 @@ div {
     font-weight: bold;
 }
 
-#quoteresponse {
+#quoteresponse, #addquote {
     display: none;
 }

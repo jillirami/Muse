@@ -1,32 +1,53 @@
-﻿@{
+﻿@model IEnumerable<Muse.Models.Musing>
+
+@{
     ViewData["Title"] = "Meaning";
 }
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/OnlyEntry.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/Metrics.css" type="text/css" />
 }
 
 <section>
-    <p>VADER Sentiment Analysis. VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media, and works well on texts from other domains.</p>
-    <p>About Sentiment Scoring</p>
-    <p>
+    <h2>Your Changes Over Time</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Entry</th>
+                <th>SUDS</th>
+                <th>Sentiment Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Date</a></td>
+                    <td><a class="link" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></td>
+                    <td>@item.SUDS</td>
+                    <td>@item.Sentiment</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+
+
+<section id="metrics">
+    <h3>VADER Sentiment Analysis: About Sentiment Scoring</h3>
+    <h5>Abridged/Reworded VADER Documentation Description</h5>
+    <p id="start">
         The compound score is computed by summing the valence scores of each word in the lexicon,
         adjusted according to the rules, and then normalized to be between -1 (most extreme negative)
-        and +1 (most extreme positive). This is the most useful metric if you want a single unidimensional
-        measure of sentiment for a given sentence. Calling it a 'normalized, weighted composite score' is accurate.
+        and +1 (most extreme positive).
     </p>
 
-    <p>It is also useful for researchers who would like to set standardized thresholds for classifying 
-        sentences as either positive, neutral, or negative. Typical threshold values (used in the literature cited on this page) are: </p>
+    <p>Entries are classified as either positive, neutral, or negative.</p>
 
-    <p>- positive sentiment: compound score >= 0.05</p>
-    <p>- neutral sentiment: (compound score > -0.05) and (compound score < 0.05)</p>
-    <p>- negative sentiment: compound score <= -0.05</p>
-    <p>
-        The pos, neu, and neg scores are ratios for proportions of text that fall
-        in each category (so these should all add up to be 1... or close to it with float operation).
-        These are the most useful metrics if you want multidimensional measures of sentiment for a given sentence.
-    </p>
+    <p>- positive sentiment: score >= 0.05</p>
+    <p>- neutral sentiment: ( score > -0.05) and (score < 0.05)</p>
+    <p>- negative sentiment: score <= -0.05</p>
 </section>
 
 

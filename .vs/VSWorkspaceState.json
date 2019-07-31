@@ -8,8 +8,7 @@
     "\\Muse\\Views\\Musings",
     "\\Muse\\Views\\Users",
     "\\Muse\\wwwroot",
-    "\\Muse\\wwwroot\\css",
-    "\\Muse\\wwwroot\\lib\\jquery-validation-unobtrusive"
+    "\\Muse\\wwwroot\\css"
   ],
   "SelectedNode": "\\Muse.sln",
   "PreviewInSolutionExplorer": false

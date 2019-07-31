@@ -23,7 +23,7 @@ h2, #quote, #news, #quoteresponse, #newsresponse, #addquote, #addnews {
     padding-bottom: 10px;
 }
 
-#quote, #news, #addquote, #addnews {
+#quote, #news {
     border-radius: 5px;
     padding: 3px;
     border: 1px double rgb(231, 231, 231);
@@ -33,12 +33,26 @@ h2, #quote, #news, #quoteresponse, #newsresponse, #addquote, #addnews {
     margin-top: 15px;
 }
 
-#quote:hover, #news:hover, #addquote:hover, #addnews:hover {
+#quote:hover, #news:hover {
     border: 1px double rgb(241, 241, 241);
     background-color: rgb(231, 231, 231);
     font-weight: bold;
 }
 
+#addquote, #addnews {
+    font-weight: bold;
+    padding: 3px;
+}
+
+    #addquote:hover, #addnews:hover {
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: rgb(231, 231, 231);
+        border: 1px double rgb(241, 241, 241);
+        width: 60%;
+        margin: auto;
+
+    }
 
 #quoteresponse, #newsresponse {
     width: 50%;

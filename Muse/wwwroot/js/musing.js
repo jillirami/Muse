@@ -10,7 +10,7 @@ const loadNews = () => {
             }
 
             $('#newsresponse').empty().append(response.data.results[i].abstract);
-            $('#addnews').empty().append('Add Quote as Prompt');
+            $('#addnews').empty().append('Add News as Prompt');
 
             i++;
         })

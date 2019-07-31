@@ -44,3 +44,21 @@ th {
 td {
     text-align: center;
 }
+
+.button {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px double rgb(231, 231, 231);
+    background-color: rgb(241, 241, 241);
+}
+
+.button:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+}
+
+.option {
+    margin-top: 20px;
+    text-align: center;
+}

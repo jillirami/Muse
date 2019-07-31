@@ -5,7 +5,7 @@
 }
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/Metrics.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/MetricsStyle.css" type="text/css" />
 }
 
 <section>
@@ -49,6 +49,10 @@
     <p>- <a style="color: rgb(255, 0, 0, 0.5)">neutral sentiment:</a> ( score > -0.05) and (score < 0.05)</p>
     <p>- <a style="color: #a9a9a9">negative sentiment:</a> score <= -0.05</p>
 </section>
+
+<div class="option">
+    <a class="link button" asp-action="Home" asp-controller="Users">Return Home</a>
+</div>
 
 
 @section Scripts {

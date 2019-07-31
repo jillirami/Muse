@@ -32,7 +32,7 @@ h2, .link, #quote, #news, #quoteresponse, #newsresponse {
     margin: auto;
 }
 
-#quote {
+#quote, #news {
     margin-top: 15px;
 }
 

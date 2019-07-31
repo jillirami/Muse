@@ -1,6 +1,4 @@
-﻿/*Credit to this tempalte which was utilized as structure for my styling: https://bootsnipp.com/snippets/OzQj */
-
-h2 {
+﻿h2 {
     text-align: center;
 }
 
@@ -151,4 +149,18 @@ li.timeline-inverted > .timeline-panel:before, li.timeline-inverted > .timeline-
     padding: 5px;
     margin-top: 5px;
     border: 1px groove rgba(0,0,0,0.2);
+}
+
+.button {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px double rgb(231, 231, 231);
+    background-color: rgb(241, 241, 241);
+}
+
+
+.button:hover {
+    border: 1px double rgb(241, 241, 241);
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
 }

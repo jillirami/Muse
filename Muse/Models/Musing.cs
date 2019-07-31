@@ -31,11 +31,11 @@ namespace Muse.Models
         {
             get
             {
-                string color = "#fc0303";
+                string color = "rgb(255, 0, 0, 0.3)";
                 if (this.Sentiment >= 0.05)
                 {
                     // Positive
-                    color = "#032cfc";
+                    color = "rgb(0, 0, 255, 0.3)";
                 }
                 else if (this.Sentiment > -0.05 && this.Sentiment < 0.05)
                 {

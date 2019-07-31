@@ -30,7 +30,10 @@ h2, .link, #quote, #news, #quoteresponse, #newsresponse {
     background-color: rgb(241, 241, 241);
     width: 60%;
     margin: auto;
-    margin-top: 5px;
+}
+
+#quote {
+    margin-top: 15px;
 }
 
 #quote:hover, #news:hover {

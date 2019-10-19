@@ -9,7 +9,7 @@
   <b>Back End</b>: C#<br>
   <b>Framework</b>: ASP.NET MVC Core<br>
   <b>Database</b>: SQL<br>
-Deployed on Azure<p>
+Deployed on Azure (depracated)<p>
   
 <p>Project Timeline: July 8th, 2019 - July 30th, 2019</p>
 
